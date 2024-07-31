@@ -525,68 +525,67 @@
           <div class="col-lg-7">
             <form class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
+        
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
-
+        
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <input type="email" class="form-control" name="email" id="email-field" required>
                 </div>
-
+        
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
                 </div>
-
+        
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="05" id="message-field" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="5" id="message-field" required></textarea>
                 </div>
-
+        
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
+        
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
           <script>
             (function () {
               "use strict";
-        
+
               let forms = document.querySelectorAll('.php-email-form');
-        
+
               forms.forEach(function (e) {
                 e.addEventListener('submit', function (event) {
                   event.preventDefault();
-        
+
                   let thisForm = this;
-        
+
                   thisForm.querySelector('.loading').classList.add('d-block');
                   thisForm.querySelector('.error-message').classList.remove('d-block');
                   thisForm.querySelector('.sent-message').classList.remove('d-block');
-        
+
                   let formData = new FormData(thisForm);
                   let formObject = {};
                   formData.forEach((value, key) => {
                     formObject[key] = value;
                   });
-        
+
                   let emailBody = `Name: ${formObject.name}<br>Email: ${formObject.email}<br>Subject: ${formObject.subject}<br>Message: ${formObject.message}`;
-                  
+
                   Email.send({
                     Host: "smtp.elasticemail.com",
                     Username: "vaibhavgshete@gmail.com",
-                    Password: "C4498FBA5FEA932462AEAB844A33E01AD07E",
-                    To: 'vaibhavgshete@gmail.com',
+                    Password: "**********AD07E", // Use your actual password here
+                    To: 'vaibhavgshete@gmail.com', // Send to your own email address
                     From: "vaibhavgshete@gmail.com", // Fixed "From" address
                     ReplyTo: formObject.email, // Use the email provided in the form as the "Reply-To" address
                     Subject: formObject.subject,
@@ -602,17 +601,17 @@
                       }
                     }
                   ).catch(
-                    error => displayError(thisForm, error)
+                    error => displayError(thisForm, error.message || 'An unknown error occurred')
                   );
                 });
               });
-        
+
               function displayError(thisForm, error) {
                 thisForm.querySelector('.loading').classList.remove('d-block');
                 thisForm.querySelector('.error-message').innerHTML = error;
                 thisForm.querySelector('.error-message').classList.add('d-block');
               }
-        
+
             })();
           </script>
 
