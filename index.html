@@ -569,7 +569,7 @@
 
                   let thisForm = this;
 
-                  thisForm.querySelector('.loading').classList.add('d-block');
+                  // thisForm.querySelector('.loading').classList.add('d-block');
                   // thisForm.querySelector('.error-message').classList.remove('d-block');
                   thisForm.querySelector('.sent-message').classList.remove('d-block');
 
@@ -601,15 +601,15 @@
                       }
                     }
                   ).catch(
-                    error => displayError(thisForm, error.message || 'An unknown error occurred')
+                    // error => displayError(thisForm, error.message || 'An unknown error occurred')
                   );
                 });
               });
 
               function displayError(thisForm, error) {
                 thisForm.querySelector('.loading').classList.remove('d-block');
-                thisForm.querySelector('.error-message').innerHTML = error;
-                thisForm.querySelector('.error-message').classList.add('d-block');
+                // thisForm.querySelector('.error-message').innerHTML = error;
+                // thisForm.querySelector('.error-message').classList.add('d-block');
               }
 
             })();
