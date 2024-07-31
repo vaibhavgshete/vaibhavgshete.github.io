@@ -584,10 +584,10 @@
                   
                   Email.send({
                     Host: "smtp.elasticemail.com",
-                    Username: "your_username",
-                    Password: "your_password",
+                    Username: "vaibhavgshete@gmail.com",
+                    Password: "C4498FBA5FEA932462AEAB844A33E01AD07E",
                     To: 'vaibhavgshete@gmail.com',
-                    From: "you@isp.com",
+                    From: formObject.email, // Use the email provided in the form as the sender
                     Subject: formObject.subject,
                     Body: emailBody
                   }).then(
