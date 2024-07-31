@@ -485,6 +485,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -556,6 +557,63 @@
               </div>
             </form>
           </div><!-- End Contact Form -->
+
+          <script>
+            (function () {
+              "use strict";
+        
+              let forms = document.querySelectorAll('.php-email-form');
+        
+              forms.forEach(function (e) {
+                e.addEventListener('submit', function (event) {
+                  event.preventDefault();
+        
+                  let thisForm = this;
+        
+                  thisForm.querySelector('.loading').classList.add('d-block');
+                  thisForm.querySelector('.error-message').classList.remove('d-block');
+                  thisForm.querySelector('.sent-message').classList.remove('d-block');
+        
+                  let formData = new FormData(thisForm);
+                  let formObject = {};
+                  formData.forEach((value, key) => {
+                    formObject[key] = value;
+                  });
+        
+                  let emailBody = `Name: ${formObject.name}<br>Email: ${formObject.email}<br>Subject: ${formObject.subject}<br>Message: ${formObject.message}`;
+                  
+                  Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "your_username",
+                    Password: "your_password",
+                    To: 'vaibhavgshete@gmail.com',
+                    From: "you@isp.com",
+                    Subject: formObject.subject,
+                    Body: emailBody
+                  }).then(
+                    message => {
+                      thisForm.querySelector('.loading').classList.remove('d-block');
+                      if (message === 'OK') {
+                        thisForm.querySelector('.sent-message').classList.add('d-block');
+                        thisForm.reset();
+                      } else {
+                        displayError(thisForm, message);
+                      }
+                    }
+                  ).catch(
+                    error => displayError(thisForm, error)
+                  );
+                });
+              });
+        
+              function displayError(thisForm, error) {
+                thisForm.querySelector('.loading').classList.remove('d-block');
+                thisForm.querySelector('.error-message').innerHTML = error;
+                thisForm.querySelector('.error-message').classList.add('d-block');
+              }
+        
+            })();
+          </script>
 
         </div>
 
