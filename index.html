@@ -1,21 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Vaibhav Shete</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Vaibhav Shete | Platform Engineering, Distributed Systems, and CI/CD Infrastructure</title>
+  <meta content="Engineering portfolio of Vaibhav Shete, focused on platform engineering, distributed systems, CI/CD automation, Kubernetes, AWS, and simulation-driven infrastructure for autonomous systems." name="description">
+  <meta content="Vaibhav Shete, Platform Engineering, Distributed Systems, CI/CD, Kubernetes, Docker, AWS, GitLab, Cloud Infrastructure, DevOps, Simulation Infrastructure, Autonomous Systems" name="keywords">
+  <meta content="#0b0f19" name="theme-color">
+  <meta content="Vaibhav Shete | Platform Engineering, Distributed Systems, and CI/CD Infrastructure" property="og:title">
+  <meta content="Explore Vaibhav Shete's engineering portfolio featuring platform systems, infrastructure automation, cloud-native deployment, and modern CI/CD delivery." property="og:description">
+  <meta content="website" property="og:type">
+  <meta content="https://vaibhavgshete.github.io/" property="og:url">
+  <meta content="https://vaibhavgshete.github.io/assets/img/my-profile-img.jpg" property="og:image">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="Vaibhav Shete | Platform Engineering, Distributed Systems, and CI/CD Infrastructure" name="twitter:title">
+  <meta content="Modern engineering portfolio focused on cloud infrastructure, CI/CD systems, and distributed execution platforms." name="twitter:description">
+  <meta content="https://vaibhavgshete.github.io/assets/img/my-profile-img.jpg" name="twitter:image">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="assets/img/apple-touch-icon.svg" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,9 +46,32 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page portfolio-modern">
 
-  <header id="header" class="header dark-background d-flex flex-column">
+  <!-- Floating Navbar -->
+  <nav class="floating-navbar" aria-label="Primary navigation">
+    <div class="nav-logo">
+      <span class="brand-mark" aria-hidden="true">VS<span class="brand-mark-accent">_</span></span>
+      <span class="brand-wordmark">Vaibhav Shete</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="assets/docs/Vaibhav_Shete_Resume.pdf" download class="resume-btn">
+        Resume
+      </a>
+    </div>
+  </nav>
+  <!-- End Floating Navbar -->
+
+  <header id="header" class="header dark-background d-flex flex-column" style="display:none;">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
@@ -50,7 +83,8 @@
       <!-- <img src="assets/img/logo.png" alt=""> -->
       <div class="d-flex flex-column align-items-center">
       <h1 class="sitename">Vaibhav Shete</h1>
-      <p>Cloud and DevOps Engineer</p>
+      <p>Software Research Engineer</p>
+      <p style="font-size: 0.85em; color: #999; margin-top: 5px; text-align: center; max-width: 240px; line-height: 1.4;">Distributed Systems | Platform Engineering | Cloud & Infrastructure</p>
       </div>
     </a>
 
@@ -72,479 +106,952 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
-    <section id="about" class="about section">
+  <main class="main site-main">
+    <!-- Modern Hero Section -->
+    <section id="hero-modern" class="hero-modern">
+      <div class="hero-left">
+        <p class="hero-tag">SOFTWARE RESEARCH ENGINEER</p>
+        <h1>
+          BUILDING <br>
+          INFRASTRUCTURE <br>
+          FOR AUTONOMOUS SYSTEMS
+        </h1>
+        <p class="hero-subtitle">
+          Distributed Systems â€¢ Platform Engineering â€¢ CI/CD â€¢ Kubernetes
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="assets/docs/Vaibhav_Shete_Resume.pdf" class="btn-secondary" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
 
+      <div class="hero-right">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-body">
+            <pre id="typed-terminal"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Modern Hero Section -->
 
-      <!-- Section Title -->
+    <section id="about" class="about-dashboard section">
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-2 justify-content-center">
-            <div class="col-lg-4">
-              <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="" style="width: 80%; height: auto;">
-            </div>
-            <div class="col-lg-8 content" style="text-align: left; padding-left: 0;">
-              <h2>Vaibhav Shete
-                <span style="display: block; font-size: 0.7em; color: #555;">Cloud and DevOps Engineer</span>
-              </h2>
-              <div class="row" style="text-align: left; padding-left: 0;">
-                <!-- <p class="py-3" style="text-align: left; padding-left: 0;"> -->
-                  <!-- With sound judgment and strong interpersonal skills, I bring hands-on experience specializing in Java, SpringBoot. I am proficient in crafting scalable solutions utilizing tools and technologies like GitLab, Jenkins, SonarQube, Nexus, Docker, Kubernetes and AWS(EKS, EC2). I have a proven ability to manage DevOps tools effectively to streamline development processes and enhance project efficiency.</p> -->
-                <div class="col-lg-6" style="text-align: left; padding-left: 0;">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vaibhavgshete@gmail.com</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9922793667</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Pune, Maharashtra</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>LinkdIn:</strong> <a href="https://linkedin.com/in/vaibhavgshete" target="_blank" rel="noopener noreferrer">linkedin.com/in/vaibhavgshete</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Resume:</strong> <a href="assets/docs/Vaibhav_Shete_Resume.pdf" download><i class="bi bi-download" style="font-size: 16px; margin-right: 8px;"></i></a></li>
-                  </ul>
+        <p>Platform engineer focused on resilient infrastructure, automation-first workflows, and simulation-driven systems that scale cleanly under real engineering pressure.</p>
+      </div>
+
+      <div class="container about-dashboard-shell">
+        <div class="about-dashboard-grid">
+          <div class="about-dashboard-left" data-aos="fade-up" data-aos-delay="100">
+            <article class="dashboard-card profile-card">
+              <div class="profile-frame">
+                <img src="assets/img/my-profile-img.jpg" alt="Vaibhav Shete" class="profile-image">
+              </div>
+              <div class="profile-copy">
+                <p class="profile-kicker">Software Research Engineer</p>
+                <h3>Vaibhav Shete</h3>
+                <p class="profile-summary">Engineer building distributed infrastructure, CI/CD platforms, and containerized systems for autonomous and cloud-native workloads. Focused on reliability, deployment velocity, and operational clarity at scale.</p>
+              </div>
+            </article>
+
+            <article class="dashboard-card focus-card" data-aos="fade-up" data-aos-delay="140">
+              <div class="panel-heading">
+                <p class="panel-kicker">Current Focus</p>
+                <h4>Engineering Priorities</h4>
+              </div>
+              <div class="focus-tags">
+                <span class="focus-pill">Distributed Systems</span>
+                <span class="focus-pill">AI-Assisted Engineering</span>
+                <span class="focus-pill">Autonomous Infrastructure</span>
+                <span class="focus-pill">Simulation Orchestration</span>
+                <span class="focus-pill">Observability</span>
+              </div>
+            </article>
+
+            <div class="about-contact-grid" data-aos="fade-up" data-aos-delay="180">
+              <a href="https://github.com/vaibhavgshete" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <span class="contact-icon"><i class="bi bi-github"></i></span>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>vaibhavgshete</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/vaibhavgshete" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <span class="contact-icon"><i class="bi bi-linkedin"></i></span>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <span>linkedin.com/in/vaibhavgshete</span>
+                </div>
+              </a>
+              <a href="mailto:vaibhavgshete@gmail.com" class="contact-card">
+                <span class="contact-icon"><i class="bi bi-envelope"></i></span>
+                <div>
+                  <strong>Email</strong>
+                  <span>vaibhavgshete@gmail.com</span>
+                </div>
+              </a>
+              <div class="contact-card">
+                <span class="contact-icon"><i class="bi bi-geo-alt"></i></span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Pune, Maharashtra</span>
                 </div>
               </div>
             </div>
-            <p>With 3.4 years of experience in DevOps, Specializing in building robust, scalable, and automated software delivery pipelines that accelerate development and ensure reliable operations.Experienced in designing end-to-end CI/CD workflows, containerization with Docker, Kubernetes orchestration, and cloud deployments on AWS. 
-              Proven track record in optimizing build and deployment processes, implementing infrastructure as code, and enabling teams to deliver software faster with fewer errors. Strong focus on observability, high availability, and system reliability across complex applications.</p>
-            <div class="row gy-3">
-            <!-- Stats Item 1 -->
-<div class="col-lg-3 col-md-6">
-  <div class="stats-item" style="display: flex; align-items: center;">
-    <i class="bi bi-gitlab" style="font-size: 24px; margin-right: 8px; color: #ff6600"></i>
-    <div>
-      <p style="margin: 0;"><strong>GitLab Certifications</strong></p>
-      <span>4× Certified</span>
-    </div>
-  </div>
-</div><!-- End Stats Item -->
-
-<!-- Stats Item 2 -->
-<div class="col-lg-3 col-md-6">
-  <div class="stats-item" style="display: flex; align-items: center;">
-    <i class="bi bi-diagram-3" style="font-size: 24px; margin-right: 8px; color: #28a745"></i>
-    <div>
-      <p style="margin: 0;"><strong>Kubernetes Deployments</strong></p>
-      <span>20+ Microservices on EKS & K8s</span>
-    </div>
-  </div>
-</div><!-- End Stats Item -->
-
-<!-- Stats Item 3 -->
-<div class="col-lg-3 col-md-6">
-  <div class="stats-item" style="display: flex; align-items: center;">
-    <i class="bi bi-arrow-repeat" style="font-size: 24px; margin-right: 8px; color: #007bff"></i>
-    <div>
-      <p style="margin: 0;"><strong>CI/CD Automations</strong></p>
-      <span>15+ Pipelines Optimized</span>
-    </div>
-  </div>
-</div><!-- End Stats Item -->
-
-<!-- Stats Item 4 -->
-<div class="col-lg-3 col-md-6">
-  <div class="stats-item" style="display: flex; align-items: center;">
-    <i class="bi bi-cloud" style="font-size: 24px; margin-right: 8px; color: #17a2b8"></i>
-    <div>
-      <p style="margin: 0;"><strong>Cloud Projects</strong></p>
-      <span>AWS, Docker, EKS, ALB</span>
-    </div>
-  </div>
-</div><!-- End Stats Item -->
-
           </div>
+
+          <div class="about-dashboard-right" data-aos="fade-up" data-aos-delay="120">
+            <div class="metrics-grid">
+              <article class="dashboard-card metric-card">
+                <p class="metric-label">CI/CD Pipelines</p>
+                <strong>15+</strong>
+                <span>Automated delivery systems optimized</span>
+              </article>
+              <article class="dashboard-card metric-card">
+                <p class="metric-label">Concurrent Workloads</p>
+                <strong>50+</strong>
+                <span>Simulation and execution jobs orchestrated</span>
+              </article>
+              <article class="dashboard-card metric-card">
+                <p class="metric-label">Kubernetes Deployments</p>
+                <strong>20+</strong>
+                <span>Microservices deployed across EKS and K8s</span>
+              </article>
+              <article class="dashboard-card metric-card">
+                <p class="metric-label">GitLab Certified</p>
+                <strong>4x</strong>
+                <span>Professional certifications earned</span>
+              </article>
+            </div>
+
+            <article class="dashboard-card status-card" data-aos="fade-up" data-aos-delay="160">
+              <div class="panel-heading">
+                <p class="panel-kicker">System Status</p>
+                <h4>Engineering Signal</h4>
+              </div>
+              <div class="status-grid">
+                <div class="status-item">
+                  <span class="status-dot"></span>
+                  <div>
+                    <strong>Infrastructure</strong>
+                    <span>Operational</span>
+                  </div>
+                </div>
+                <div class="status-item">
+                  <span class="status-dot"></span>
+                  <div>
+                    <strong>Deployment Velocity</strong>
+                    <span>High</span>
+                  </div>
+                </div>
+                <div class="status-item">
+                  <span class="status-dot"></span>
+                  <div>
+                    <strong>Reliability</strong>
+                    <span>Stable</span>
+                  </div>
+                </div>
+                <div class="status-item">
+                  <span class="status-dot"></span>
+                  <div>
+                    <strong>Automation Coverage</strong>
+                    <span>Extensive</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="dashboard-card highlights-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="panel-heading">
+                <p class="panel-kicker">Infrastructure Highlights</p>
+                <h4>Operating Context</h4>
+              </div>
+              <div class="highlights-list">
+                <div class="highlight-row">
+                  <span class="highlight-key">Primary Domain</span>
+                  <span class="highlight-value">Platform Engineering</span>
+                </div>
+                <div class="highlight-row">
+                  <span class="highlight-key">Core Stack</span>
+                  <span class="highlight-value">Kubernetes, Docker, AWS, GitLab</span>
+                </div>
+                <div class="highlight-row">
+                  <span class="highlight-key">System Bias</span>
+                  <span class="highlight-value">Automation, observability, and release reliability</span>
+                </div>
+                <div class="highlight-row">
+                  <span class="highlight-key">Environment</span>
+                  <span class="highlight-value">Simulation-heavy and autonomous infrastructure</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </div><!-- End Section Title --> 
+      </div>
     </section><!-- /About Section -->
 
     <!-- Education Section -->
-    <section id="education" class="resume section">
-      <!-- Section Title -->
+    <section id="education" class="education-showcase section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Education</h2>
-       
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="resume-item">
-  <div class="d-flex justify-content-between align-items-center">
-    <h4>Master of Computer Applications</h4>
-    <h5>2022 - 2024</h5>
-  </div>
-  <div class="d-flex justify-content-between align-items-center">
-    <p><em>Chandigarh University, Mohali</em></p>
-    <h5>CGPA: 7.50</h5>
-  </div>
-  <div class="d-flex justify-content-between align-items-center">
-    <p><strong>Completed while working as a full-time professional.</strong></p>
-  </div>
-  
-  <ul>
-    <li><strong>Application Development:</strong> Acquired expertise in creating dynamic and responsive web applications using HTML, CSS, and JavaScript, and developed backend REST APIs with Java and the Spring Boot framework.</li>
-    <li><strong>Cloud Computing:</strong> Gained knowledge in cloud services models (IaaS, PaaS, SaaS), and hands-on experience with platforms like AWS, Azure, and Google Cloud.</li>
-    <li><strong>Software Testing & Quality Assurance:</strong> Learned various testing methodologies, test automation tools (like Selenium), and best practices for ensuring software quality.</li>
-    <li><strong>Application Security:</strong> Studied implementation of encryption algorithms in code, network security protocols, and techniques to safeguard applications using JWT authentication. </li>
-    <li><strong>Advanced Computer Network:</strong> Studied advanced networking key concepts like IP Addressing and Subnetting, Routing Protocols, Network Architectures and Topologies and Network Performance Optimization (Load Balancing).</li>
-    <li><strong>Communication Skills:</strong> Enhanced written and verbal communication skills, critical for effective collaboration and presentation in professional environments.</li>
-  </ul>
-</div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4>Bachelor of Science</h4>
-                <h5>2017 - 2021</h5>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <p><em>Dr. PDKV, Akola</em></p>
-                <h5>CGPA: 7.67</h5>
-              </div>
-            </div><!-- Edn Resume Item -->
-
-          </div>  
-          </div> 
-
-        </div>
-
+        <p>Academic grounding in application engineering, cloud systems, secure software, and testing disciplines that directly support modern platform and infrastructure work.</p>
       </div>
-    </div><!-- End Section Title -->
 
+      <div class="container education-shell">
+        <div class="education-grid">
+          <article class="education-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="education-card-top">
+              <div class="education-badge">CU</div>
+              <div class="education-meta">
+                <span>2022 - 2024</span>
+                <span>Mohali</span>
+                <span>CGPA 7.50</span>
+              </div>
+            </div>
+            <h3>Master of Computer Applications</h3>
+            <p class="education-school">Chandigarh University</p>
+            <p class="education-summary">Completed while working full-time, with study areas spanning application development, cloud computing, software testing, application security, advanced networking, and professional communication.</p>
+            <div class="education-tags">
+              <span class="focus-pill">Spring Boot</span>
+              <span class="focus-pill">Cloud Computing</span>
+              <span class="focus-pill">Software Testing</span>
+              <span class="focus-pill">Application Security</span>
+              <span class="focus-pill">Advanced Networks</span>
+            </div>
+            <div class="education-highlights">
+              <div class="highlight-row">
+                <span class="highlight-key">Specialization</span>
+                <span class="highlight-value">Backend APIs, cloud services, and secure engineering fundamentals</span>
+              </div>
+              <div class="highlight-row">
+                <span class="highlight-key">Achievement</span>
+                <span class="highlight-value">Balanced academic progression alongside full-time engineering delivery</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="education-card" data-aos="fade-up" data-aos-delay="140">
+            <div class="education-card-top">
+              <div class="education-badge">PV</div>
+              <div class="education-meta">
+                <span>2017 - 2021</span>
+                <span>Akola</span>
+                <span>CGPA 7.67</span>
+              </div>
+            </div>
+            <h3>Bachelor of Science</h3>
+            <p class="education-school">Dr. PDKV, Akola</p>
+            <p class="education-summary">Established the analytical and technical foundation that later supported backend development, automation, and infrastructure-focused engineering work.</p>
+            <div class="education-tags">
+              <span class="focus-pill">Technical Foundation</span>
+              <span class="focus-pill">Analytical Thinking</span>
+              <span class="focus-pill">Problem Solving</span>
+            </div>
+            <div class="education-highlights">
+              <div class="highlight-row">
+                <span class="highlight-key">Focus</span>
+                <span class="highlight-value">Structured problem solving and scientific reasoning</span>
+              </div>
+              <div class="highlight-row">
+                <span class="highlight-key">Outcome</span>
+                <span class="highlight-value">Strong base for engineering systems, automation, and backend learning</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section><!-- /Education Section -->
   
 
     <!-- Experience Section -->
-<section id="experience" class="resume section">
-  <!-- Section Title -->
+<section id="experience" class="experience-timeline section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Experience</h2>
+    <p>Career progression across platform engineering, CI/CD automation, and cloud infrastructure, focused on shipping reliable systems with measurable engineering impact.</p>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+  <div class="container experience-shell">
+    <div class="timeline-track"></div>
 
-          <!-- Resume Item -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>DevOps Engineer - CI/CD Infrastructure and Pipeline Automation</h4>
-              <h5>Nov 2024 – Present</h5>
+    <article class="timeline-entry" data-aos="fade-up" data-aos-delay="100">
+      <div class="timeline-node"></div>
+      <div class="experience-card">
+        <div class="experience-card-header">
+          <div class="company-badge">RM</div>
+          <div class="experience-heading">
+            <p class="experience-role">Software Research Engineer</p>
+            <h3>AI & Embedded Systems Infrastructure Automation</h3>
+            <div class="experience-meta">
+              <span>Raphe mPhibr Pvt. Ltd.</span>
+              <span>Oct 2025 - Present</span>
+              <span>Noida, Uttar Pradesh</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <p><em>Fineshift Software Pvt. Ltd.</em></p>
-              <h5>Pune, Maharashtra</h5>
-            </div>
-            <ul>
-              <li>Engineered an enterprise-grade <strong>CI/CD ecosystem</strong> for large-scale drone simulations, enabling 50+ concurrent swarm instances and accelerating testing cycles.</li>
-              <li>Set up and maintained <strong>GitLab Runner infrastructure</strong> with Docker-based execution and concurrency optimization.</li>
-              <li>Implemented build (cross-compilation), test (Squish, Cppcheck, Clang scan-build), and release workflows in <strong>GitLab pipelines</strong>.</li>
-              <li>Designed <strong>custom Docker images</strong> for Qt-based apps and integrated headless simulation tools.</li>
-              <li>Automated <strong>log parsing and storage</strong> on SFTP for simulation analysis.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <!-- Resume Item -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Engineer – Projects (CI/CD & Automation)</h4>
-              <h5>Apr 2022 – Nov 2024</h5>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <p><em>Datamato Technologies Pvt. Ltd.</em></p>
-              <h5>Pune, Maharashtra</h5>
-            </div>
-            <ul>
-              <li>Delivered high-impact <strong>CI/CD pipelines</strong> using GitLab, SonarQube, Nexus, and Tomcat, cutting delivery time by 40%.</li>
-              <li>Implemented <strong>One-Click Deployment</strong> integrating database & filesystem automation via GitLab and Shell scripting, boosting efficiency by 90%.</li>
-              <li>Deployed workloads to <strong>AWS EKS</strong>, authored Kubernetes manifests, and optimized pods for microservices.</li>
-              <li>Orchestrated <strong>multi-project GitLab pipelines</strong> integrating 45+ modules with upstream and downstream dependencies.</li>
-              <li>Automated deployment for 30+ Oracle Siebel components via GitLab, reducing manual effort by 75%.</li>
-              <li>Developed Java-based <strong>GitLab utilities</strong> reducing Siebel data operations from 4 hours to 20 minutes.</li>
-              <li>Built <strong>SOR platform and Automation Adaptor</strong> using Spring Boot, reducing manual work by 80%.</li>
-              <li>Configured <strong>Nginx</strong> for microservices load balancing, improving reliability by 30%.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <!-- Resume Item -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Intern</h4>
-              <h5>Nov 2021 – Apr 2022</h5>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <p><em>Java By Kiran Training Institute</em></p>
-              <h5>Pune, Maharashtra</h5>
-            </div>
-            <ul>
-              <li>Created an employee management module using <strong>Core Java</strong>, demonstrating solid OOP fundamentals.</li>
-              <li>Developed and executed <strong>Selenium automation scripts</strong> for web application testing.</li>
-              <li>Tested multiple websites (e.g., naukri.com, javabykiran.com), reported bugs, and improved application performance.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
+          </div>
+        </div>
+        <p class="experience-summary">Leading platform and infrastructure automation for autonomous systems, with a focus on CI/CD workflows, distributed execution environments, edge deployment readiness, and simulation-scale reliability.</p>
+        <div class="experience-metrics">
+          <div class="metric-chip">
+            <strong>50+</strong>
+            <span>Concurrent workloads</span>
+          </div>
+          <div class="metric-chip">
+            <strong>Edge</strong>
+            <span>Inference deployment focus</span>
+          </div>
+          <div class="metric-chip">
+            <strong>AI</strong>
+            <span>Agentic automation exploration</span>
+          </div>
+        </div>
+        <div class="experience-stack">
+          <span class="stack-pill">CI/CD</span>
+          <span class="stack-pill">Distributed Systems</span>
+          <span class="stack-pill">Containers</span>
+          <span class="stack-pill">Simulation Infra</span>
+          <span class="stack-pill">Observability</span>
+          <span class="stack-pill">AI Deployment</span>
         </div>
       </div>
-    </div>
-  </div><!-- End Section Title -->
-</section><!-- /Experience Section -->
+    </article>
 
-     <!-- Projects Section -->
-<section id="projects" class="resume section">
-  <!-- Section Title -->
+    <article class="timeline-entry" data-aos="fade-up" data-aos-delay="140">
+      <div class="timeline-node"></div>
+      <div class="experience-card">
+        <div class="experience-card-header">
+          <div class="company-badge">FS</div>
+          <div class="experience-heading">
+            <p class="experience-role">DevOps Engineer</p>
+            <h3>CI/CD Infrastructure and Pipeline Automation</h3>
+            <div class="experience-meta">
+              <span>Fineshift Software Pvt. Ltd.</span>
+              <span>Nov 2024 - Oct 2025</span>
+              <span>Pune, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+        <p class="experience-summary">Engineered an enterprise-grade CI/CD environment for large-scale drone simulation programs, combining GitLab runners, Docker-based execution, test automation, and log handling for faster validation cycles.</p>
+        <div class="experience-metrics">
+          <div class="metric-chip">
+            <strong>50+</strong>
+            <span>Swarm simulations</span>
+          </div>
+          <div class="metric-chip">
+            <strong>End-to-End</strong>
+            <span>Build, test, release flows</span>
+          </div>
+          <div class="metric-chip">
+            <strong>SFTP</strong>
+            <span>Automated log storage</span>
+          </div>
+        </div>
+        <div class="experience-stack">
+          <span class="stack-pill">GitLab</span>
+          <span class="stack-pill">Docker</span>
+          <span class="stack-pill">CI/CD</span>
+          <span class="stack-pill">Qt Tooling</span>
+          <span class="stack-pill">Cppcheck</span>
+          <span class="stack-pill">Simulation Testing</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="timeline-entry" data-aos="fade-up" data-aos-delay="180">
+      <div class="timeline-node"></div>
+      <div class="experience-card">
+        <div class="experience-card-header">
+          <div class="company-badge">DT</div>
+          <div class="experience-heading">
+            <p class="experience-role">Engineer - Projects</p>
+            <h3>CI/CD and Automation</h3>
+            <div class="experience-meta">
+              <span>Datamato Technologies Pvt. Ltd.</span>
+              <span>Apr 2022 - Nov 2024</span>
+              <span>Pune, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+        <p class="experience-summary">Delivered automation-heavy delivery systems across GitLab, SonarQube, Nexus, Kubernetes, and AWS, reducing release effort, scaling multi-project workflows, and improving reliability for application and platform teams.</p>
+        <div class="experience-metrics">
+          <div class="metric-chip">
+            <strong>90%</strong>
+            <span>Deployment effort reduction</span>
+          </div>
+          <div class="metric-chip">
+            <strong>45+</strong>
+            <span>Modules integrated</span>
+          </div>
+          <div class="metric-chip">
+            <strong>20+</strong>
+            <span>Microservices deployed</span>
+          </div>
+          <div class="metric-chip">
+            <strong>75%</strong>
+            <span>Manual effort reduced</span>
+          </div>
+        </div>
+        <div class="experience-stack">
+          <span class="stack-pill">GitLab</span>
+          <span class="stack-pill">SonarQube</span>
+          <span class="stack-pill">Nexus</span>
+          <span class="stack-pill">AWS</span>
+          <span class="stack-pill">Kubernetes</span>
+          <span class="stack-pill">Nginx</span>
+          <span class="stack-pill">Spring Boot</span>
+          <span class="stack-pill">Shell</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="timeline-entry" data-aos="fade-up" data-aos-delay="220">
+      <div class="timeline-node"></div>
+      <div class="experience-card">
+        <div class="experience-card-header">
+          <div class="company-badge">JK</div>
+          <div class="experience-heading">
+            <p class="experience-role">Intern</p>
+            <h3>Java and Test Automation Foundations</h3>
+            <div class="experience-meta">
+              <span>Java By Kiran Training Institute</span>
+              <span>Nov 2021 - Apr 2022</span>
+              <span>Pune, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+        <p class="experience-summary">Built early engineering foundations through Java application work, Selenium-driven testing, and hands-on QA feedback loops across training and production-like web environments.</p>
+        <div class="experience-metrics">
+          <div class="metric-chip">
+            <strong>Core Java</strong>
+            <span>OOP fundamentals</span>
+          </div>
+          <div class="metric-chip">
+            <strong>Selenium</strong>
+            <span>Automated test scripts</span>
+          </div>
+          <div class="metric-chip">
+            <strong>QA</strong>
+            <span>Bug reporting workflow</span>
+          </div>
+        </div>
+        <div class="experience-stack">
+          <span class="stack-pill">Java</span>
+          <span class="stack-pill">Selenium</span>
+          <span class="stack-pill">Testing</span>
+          <span class="stack-pill">OOP</span>
+          <span class="stack-pill">Web QA</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section><!-- /Experience Section -->
+<!-- Projects Section -->
+<section id="projects" class="projects-showcase section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Projects</h2>
+    <p>Selected infrastructure and platform engineering builds focused on scalable deployment, automated delivery, and production-grade orchestration.</p>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-
-          <!-- Project: Three-Tier Application Deployment -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Three-Tier Application Deployment on AWS EKS | 
-                <span style="text-transform: none;">ReactJS, Node.js, MongoDB, Docker, AWS ECR, EKS, ALB</span>
-                <a href="https://github.com/vaibhavgshete/Three-Tier-Application-On-EKS" target="_blank" style="font-size: 14px; margin-left: 10px; text-decoration: none; color: #007bff;">
-        🔗 Click Here
-      </a>    
-              </h4>
-            </div>
-            <ul>
-              <li><strong>Architecture:</strong> Deployed a scalable three-tier application (Frontend: ReactJS, Backend: Node.js, Database: MongoDB) on Amazon EKS with two worker nodes.</li>
-              <li><strong>Containerization & Registry:</strong> Built and pushed Docker images to AWS Elastic Container Registry (ECR) for seamless deployment.</li>
-              <li><strong>Ingress & Load Balancing:</strong> Configured AWS ALB Ingress Controller for external access and domain integration (<em>todo.vaibhavgshete.com</em>).</li>
-              <li><strong>Cloud-Native Deployment:</strong> Automated deployment workflows using Kubernetes manifests, ensuring high availability and scalability.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <!-- Project: Drone Simulation CI/CD Pipeline -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Drone Simulation CI/CD Pipeline | 
-                <span style="text-transform: none;">GitLab, Docker, Kubernetes</span> 
-              </h4>
-            </div>
-            <ul>
-              <li><strong>Scalable Simulation:</strong> Engineered infrastructure to run 50+ concurrent drone swarm simulations with ArduPilot, MissionPlanner, and QGroundControl.</li>
-              <li><strong>Automation:</strong> Implemented CI/CD pipelines for build, test, and deployment using GitLab runners with Docker-based execution.</li>
-              <li><strong>Integration:</strong> Automated log parsing and storage on SFTP to accelerate testing and validation cycles.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <!-- Project: Game 2048 on AWS EKS (Fargate) -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Game 2048 on AWS EKS (Fargate) | 
-                <span style="text-transform: none;">AWS EKS, Fargate, Helm, Kubernetes</span>
-                <a href="https://github.com/vaibhavgshete/Game2048-on-EKS" target="_blank" style="font-size: 14px; margin-left: 10px; text-decoration: none; color: #007bff;">
-        🔗 Click Here
-      </a>  
-              </h4>
-            </div>
-            <ul>
-              <li><strong>Serverless Deployment:</strong> Deployed 2048 game application on AWS EKS using Fargate for serverless compute of Kubernetes pods.</li>
-              <li><strong>Networking & Security:</strong> Configured AWS Load Balancer Controller, IAM roles, and Ingress for secure and scalable public access.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <!-- Project: One-Click Deployment Tool -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>One-Click Deployment Tool | 
-                <span style="text-transform: none;">Shell, GitLab, AWS</span>
-              </h4>
-            </div>
-            <ul>
-              <li><strong>Deployment Automation:</strong> Created a deployment utility integrating database and filesystem automation via GitLab pipelines.</li>
-              <li><strong>Efficiency Gains:</strong> Reduced deployment time by 90%, ensuring faster and more reliable application rollouts.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <!-- Project: Java Maven Sonar Docker K8s CI/CD Pipeline -->
-          <div class="resume-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Java Maven Sonar Docker K8s CI/CD Pipeline | 
-                <span style="text-transform: none;">Java, Jenkins, SonarQube, Docker, Kubernetes</span>
-                <a href="https://github.com/vaibhavgshete/java-maven-sonar-docker-k8s-project" target="_blank" style="font-size: 14px; margin-left: 10px; text-decoration: none; color: #007bff;">
-        🔗 Click Here
-      </a>
-              </h4>
-            </div>
-            <ul>
-              <li><strong>Pipeline Automation:</strong> Implemented full CI/CD workflow integrating Jenkins, SonarQube, DockerHub, and Kubernetes manifests.</li>
-              <li><strong>Code Quality & Deployment:</strong> Automated quality checks, containerization, and Kubernetes deployments, streamlining release cycles.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
+  <div class="container projects-shell" data-aos="fade-up" data-aos-delay="100">
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-preview preview-eks">
+          <div class="preview-grid"></div>
+          <div class="preview-node preview-node-lg"></div>
+          <div class="preview-node preview-node-md"></div>
+          <div class="preview-node preview-node-sm"></div>
+          <div class="preview-rail"></div>
+          <div class="preview-label">EKS / ALB / ECR</div>
         </div>
-      </div>
-    </div>
-  </div><!-- End Section Title -->
+        <div class="project-card-body">
+          <div class="project-meta">Cloud Deployment System</div>
+          <h3 class="project-title">Three-Tier Application on AWS EKS</h3>
+          <p class="project-description">Shipped a containerized React, Node.js, and MongoDB stack on Amazon EKS with ALB ingress, image delivery through ECR, and production-style Kubernetes orchestration.</p>
+          <div class="project-stack">
+            <span class="stack-pill">React</span>
+            <span class="stack-pill">Node.js</span>
+            <span class="stack-pill">MongoDB</span>
+            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">AWS EKS</span>
+            <span class="stack-pill">ALB</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vaibhavgshete/Three-Tier-Application-On-EKS" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">View Project</a>
+            <a href="https://github.com/vaibhavgshete/Three-Tier-Application-On-EKS" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+            <a href="https://github.com/vaibhavgshete/Three-Tier-Application-On-EKS" target="_blank" rel="noopener noreferrer" class="project-btn">Architecture</a>
+          </div>
+        </div>
+      </article>
 
+      <article class="project-card">
+        <div class="project-preview preview-sim">
+          <div class="preview-grid"></div>
+          <div class="preview-cluster">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-signal"></div>
+          <div class="preview-label">SIMULATION / CI / LOGS</div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-meta">Autonomous Systems Infrastructure</div>
+          <h3 class="project-title">Drone Simulation CI/CD Pipeline</h3>
+          <p class="project-description">Built pipeline infrastructure for 50+ concurrent drone simulation workloads with automated build, execution, and log capture across containerized GitLab runner environments.</p>
+          <div class="project-stack">
+            <span class="stack-pill">GitLab</span>
+            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">Kubernetes</span>
+            <span class="stack-pill">ArduPilot</span>
+            <span class="stack-pill">Mission Planner</span>
+            <span class="stack-pill">SFTP</span>
+          </div>
+          <div class="project-actions">
+            <a href="#contact" class="project-btn project-btn-primary">View Project</a>
+            <a href="#contact" class="project-btn">GitHub</a>
+            <a href="#contact" class="project-btn">Architecture</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-preview preview-fargate">
+          <div class="preview-grid"></div>
+          <div class="preview-bar"></div>
+          <div class="preview-card-stack">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-label">FARGATE / HELM / INGRESS</div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-meta">Serverless Kubernetes Deployment</div>
+          <h3 class="project-title">Game 2048 on AWS EKS Fargate</h3>
+          <p class="project-description">Deployed a lightweight game workload on EKS Fargate with Helm-based provisioning, ingress configuration, and managed Kubernetes compute without worker node operations.</p>
+          <div class="project-stack">
+            <span class="stack-pill">AWS EKS</span>
+            <span class="stack-pill">Fargate</span>
+            <span class="stack-pill">Helm</span>
+            <span class="stack-pill">Kubernetes</span>
+            <span class="stack-pill">Ingress</span>
+            <span class="stack-pill">IAM</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vaibhavgshete/Game2048-on-EKS" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">View Project</a>
+            <a href="https://github.com/vaibhavgshete/Game2048-on-EKS" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+            <a href="https://github.com/vaibhavgshete/Game2048-on-EKS" target="_blank" rel="noopener noreferrer" class="project-btn">Architecture</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-preview preview-deploy">
+          <div class="preview-grid"></div>
+          <div class="preview-flow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-track"></div>
+          <div class="preview-label">SHELL / AWS / AUTOMATION</div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-meta">Release Automation Utility</div>
+          <h3 class="project-title">One-Click Deployment Tool</h3>
+          <p class="project-description">Designed a deployment utility that automated database and filesystem release steps through GitLab-driven workflows, cutting rollout time by roughly 90 percent.</p>
+          <div class="project-stack">
+            <span class="stack-pill">Shell</span>
+            <span class="stack-pill">GitLab</span>
+            <span class="stack-pill">AWS</span>
+            <span class="stack-pill">Deployment Ops</span>
+            <span class="stack-pill">Automation</span>
+          </div>
+          <div class="project-actions">
+            <a href="#contact" class="project-btn project-btn-primary">View Project</a>
+            <a href="#contact" class="project-btn">GitHub</a>
+            <a href="#contact" class="project-btn">Architecture</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-preview preview-cicd">
+          <div class="preview-grid"></div>
+          <div class="preview-pipeline">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-label">BUILD / SCAN / SHIP</div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-meta">Quality-Gated Delivery Pipeline</div>
+          <h3 class="project-title">Java Maven Sonar Docker K8s CI/CD</h3>
+          <p class="project-description">Implemented an end-to-end delivery pipeline that combined build automation, SonarQube checks, Docker packaging, and Kubernetes deployment for faster, safer releases.</p>
+          <div class="project-stack">
+            <span class="stack-pill">Java</span>
+            <span class="stack-pill">Jenkins</span>
+            <span class="stack-pill">SonarQube</span>
+            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">Kubernetes</span>
+            <span class="stack-pill">Maven</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vaibhavgshete/java-maven-sonar-docker-k8s-project" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">View Project</a>
+            <a href="https://github.com/vaibhavgshete/java-maven-sonar-docker-k8s-project" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+            <a href="https://github.com/vaibhavgshete/java-maven-sonar-docker-k8s-project" target="_blank" rel="noopener noreferrer" class="project-btn">Architecture</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
 </section><!-- /Projects Section -->
 
-
    <!-- Skills Section -->
-<section id="skills" class="skills section light-background">
-  <!-- Section Title -->
+<section id="skills" class="skills-showcase section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Skills</h2>
+    <p>Platform-focused tools, languages, and infrastructure systems used to build reliable delivery pipelines, cloud platforms, and production-grade engineering workflows.</p>
+  </div>
 
-    <!-- Languages -->
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row skills-content skills-animation">
-        <div>
-          <h5 style="margin-bottom: 18px;">Languages</h5>
+  <div class="container skills-shell">
+    <div class="skills-groups">
+      <section class="skill-group" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-group-header">
+          <p class="skill-group-kicker">Platform Systems</p>
+          <h3>Platform Engineering</h3>
+          <p>Infrastructure layers, orchestration, and delivery foundations for resilient software platforms.</p>
         </div>
-        <div class="col-lg-12" style="display: flex; flex-wrap: wrap; gap: 40px;">
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff; 
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Java</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff; 
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Python</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff; 
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Shell Scripting</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff; 
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>SQL</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff; 
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>YAML</span>
-          </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-kubernetes">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,6 50,16 50,36 32,46 14,36 14,16" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="32" cy="26" r="7" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 13v6M21 20l5 3M43 20l-5 3M21 32l5-3M43 32l-5-3M32 33v7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Kubernetes</h4>
+              <p>Cluster orchestration</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-docker">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="26" width="8" height="8" fill="currentColor"/><rect x="20" y="26" width="8" height="8" fill="currentColor"/><rect x="30" y="26" width="8" height="8" fill="currentColor"/><rect x="20" y="16" width="8" height="8" fill="currentColor"/><rect x="30" y="16" width="8" height="8" fill="currentColor"/><rect x="40" y="16" width="8" height="8" fill="currentColor"/><path d="M10 38h28c2 6 7 10 14 10 6 0 11-3 14-8-3 1-7 0-9-2-1-2-1-4 0-6-3-1-6 0-8 2h-3c-2-4-5-6-10-6H10z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Docker</h4>
+              <p>Container packaging</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-gitlab">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 34l7-21c1-2 3-2 4 0l6 19h6l6-19c1-2 3-2 4 0l7 21-14 16-12 8-12-8z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>GitLab</h4>
+              <p>Platform delivery hub</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-terraform">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 10l16 9v18l-16-9zM34 21l16 9v24l-16-9zM34 10l16 9-16 9-16-9z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Terraform</h4>
+              <p>Infrastructure as code</p>
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
+
+      <section class="skill-group" data-aos="fade-up" data-aos-delay="140">
+        <div class="skill-group-header">
+          <p class="skill-group-kicker">Runtime & Cloud</p>
+          <h3>Cloud Infrastructure</h3>
+          <p>Compute, networking, and deployment surfaces used to run scalable workloads in production.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-aws">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 40c10 6 26 8 38 2" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M22 25h7l5 14 5-14h7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>AWS</h4>
+              <p>Cloud platform</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-nginx">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,8 50,18 50,46 32,56 14,46 14,18" fill="none" stroke="currentColor" stroke-width="4"/><path d="M24 40V24l16 16V24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Nginx</h4>
+              <p>Ingress & routing</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-helm">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="18" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 16v16l10 10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Helm</h4>
+              <p>Kubernetes releases</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-linux">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M24 20c0-6 4-10 8-10s8 4 8 10v8c4 3 6 7 6 12 0 8-6 14-14 14s-14-6-14-14c0-5 2-9 6-12z" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="28" cy="24" r="2" fill="currentColor"/><circle cx="36" cy="24" r="2" fill="currentColor"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Linux</h4>
+              <p>Systems operations</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skill-group" data-aos="fade-up" data-aos-delay="180">
+        <div class="skill-group-header">
+          <p class="skill-group-kicker">Languages</p>
+          <h3>Programming</h3>
+          <p>Implementation languages used across automation tooling, backend systems, and delivery workflows.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-java">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M24 44c2 2 6 4 8 4s6-2 8-4M28 18c5 3-3 6 2 10M38 14c5 4-5 7 1 12M22 34c6 2 14 2 20 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M20 42h24" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Java</h4>
+              <p>Backend & utilities</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-python">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 14h12c6 0 8 3 8 8v6H22c-4 0-8 3-8 8v4c0 5 3 10 10 10h10" fill="none" stroke="currentColor" stroke-width="4"/><path d="M42 50H30c-6 0-8-3-8-8v-6h20c4 0 8-3 8-8v-4c0-5-3-10-10-10H30" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="28" cy="20" r="2" fill="currentColor"/><circle cx="36" cy="44" r="2" fill="currentColor"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Python</h4>
+              <p>Automation scripting</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-shell">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 18h40v28H12z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M20 28l8 6-8 6M34 40h10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Shell</h4>
+              <p>Ops automation</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-sql">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="16" rx="16" ry="7" fill="none" stroke="currentColor" stroke-width="4"/><path d="M16 16v20c0 4 7 8 16 8s16-4 16-8V16" fill="none" stroke="currentColor" stroke-width="4"/><path d="M16 28c0 4 7 8 16 8s16-4 16-8" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>SQL</h4>
+              <p>Data workflows</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skill-group" data-aos="fade-up" data-aos-delay="220">
+        <div class="skill-group-header">
+          <p class="skill-group-kicker">Observability</p>
+          <h3>Monitoring & Tooling</h3>
+          <p>Visibility, diagnostics, and quality tools that support reliable delivery and healthy systems.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-prometheus">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="18" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 20v12l8 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Prometheus</h4>
+              <p>Metrics collection</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-grafana">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 42c0-7 5-12 12-12 5 0 9 2 12 6 2-8-4-16-12-16-10 0-18 8-18 18 0 8 5 15 13 17-4-3-7-8-7-13z" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="38" cy="34" r="4" fill="currentColor"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Grafana</h4>
+              <p>Dashboards & insight</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-sonarqube">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 40c5 8 15 12 24 10 8-2 14-8 16-16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M20 32c4 5 10 8 17 8 6 0 12-2 17-7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M24 24c3 3 7 4 11 4 5 0 9-2 13-5" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>SonarQube</h4>
+              <p>Code quality gates</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-nexus">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 10l16 9v18l-16 9-16-9V19z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 28l16-9M32 28l-16-9M32 28v18" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Nexus</h4>
+              <p>Artifact management</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skill-group" data-aos="fade-up" data-aos-delay="260">
+        <div class="skill-group-header">
+          <p class="skill-group-kicker">Delivery Pipelines</p>
+          <h3>CI/CD & Automation</h3>
+          <p>Release automation, build systems, and engineering workflows that increase deployment velocity.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-jenkins">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="22" r="8" fill="none" stroke="currentColor" stroke-width="4"/><path d="M24 46c0-6 4-12 8-12s8 6 8 12" fill="none" stroke="currentColor" stroke-width="4"/><path d="M20 54h24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Jenkins</h4>
+              <p>Pipeline automation</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-maven">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 46l8-24 8 14 8-14 8 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Maven</h4>
+              <p>Build lifecycle</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-gradle">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 42l10-20 10 20-10 8z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M27 32h10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>Gradle</h4>
+              <p>Build automation</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-yaml">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M18 18h28v28H18z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M24 26l8 8 8-8M32 34v10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="skill-card-body">
+              <h4>YAML</h4>
+              <p>Pipeline configuration</p>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
-
-    <!-- Tools & Services -->
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row skills-content skills-animation">
-        <div>
-          <h5 style="margin-bottom: 18px; margin-top: 40px;">Tools & Services</h5>
-        </div>
-        <div class="col-lg-12" style="display: flex; flex-wrap: wrap; gap: 40px;">
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Git / GitLab</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Maven / Gradle</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Jenkins</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>SonarQube</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Nexus</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Docker</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Kubernetes (EKS)</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>AWS Cloud Infrastructure</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Prometheus and Grafana</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Terraform(Infrastru-cture as a Code)</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Core Skills -->
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row skills-content skills-animation">
-        <div>
-          <h5 style="margin-bottom: 18px; margin-top: 40px;">Core Skills</h5>
-        </div>
-        <div class="col-lg-12" style="display: flex; flex-wrap: wrap; gap: 40px;">
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>DevOps & CI/CD Automation</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Backend Development (Spring Boot, REST APIs)</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Deployment Management</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Software Development Lifecycle</span>
-          </div>
-          <div style="display: inline-block; width: 165px; padding: 10px; background-color: #e0f7ff;
-                      border-radius: 8px; border: 2px solid #149ddd; text-align: center;">
-            <span>Team Leadership & Collaboration</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- End Section Title -->
+  </div>
 </section><!-- /Skills Section -->
-
     <!-- Certifications Section -->
-    <section id="certifications" class="skills section light-background">
-      <!-- Section Title -->
+    <section id="certifications" class="certifications-showcase section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Certifications and Achievements</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
-          <a href="https://www.credly.com/badges/bb081d6d-10e0-4b8d-a348-c0e60904c5ff/public_url" target="_blank" style="text-decoration: none; color: inherit;">
-            <div style="display: flex; flex-direction: column; align-items: center; width: 250px; padding: 10px; border: 2px solid #149ddd; border-radius: 8px; background-color: #e0f7ff;">
-              <img src="assets/img/gitlab-certified-git-associate.png" alt="GitLab Certified Git Associate" style="max-width: 100%; height: auto; border-radius: 8px;">
-              <span style="margin-top: 10px; text-align: center; font-weight: bold;">GitLab Certified Git Associate</span>
+        <p>Industry-recognized credentials across GitLab delivery, CI/CD operations, and full-stack engineering, reinforcing hands-on execution in platform and infrastructure environments.</p>
+      </div>
+      <div class="container certifications-shell">
+        <div class="certifications-grid">
+          <article class="certification-card certification-card-featured" data-aos="fade-up" data-aos-delay="100">
+            <div class="certification-badge-wrap">
+              <img src="assets/img/gitlab-certified-git-associate.png" alt="GitLab Certified Git Associate" class="certification-badge-image">
             </div>
-          </a>
-
-          <a href="https://www.credly.com/badges/26ad62be-4ac4-4034-a992-a0aa730f5f2c/public_url" target="_blank" style="text-decoration: none; color: inherit;">
-            <div style="display: flex; flex-direction: column; align-items: center; width: 250px; padding: 10px; border: 2px solid #149ddd; border-radius: 8px; background-color: #e0f7ff;">
-              <img src="assets/img/gitlab-certified-project-management-associate.png" alt="GitLab Certified Project Management Associate" style="max-width: 100%; height: auto; border-radius: 8px;">
-              <span style="margin-top: 10px; text-align: center; font-weight: bold;">GitLab Certified Project Management Associate</span>
+            <div class="certification-copy">
+              <p class="certification-issuer">GitLab</p>
+              <h3>Git Associate</h3>
+              <div class="certification-tags">
+                <span class="focus-pill">GitLab Certified</span>
+                <span class="focus-pill">Version Control</span>
+              </div>
+              <a href="https://www.credly.com/badges/bb081d6d-10e0-4b8d-a348-c0e60904c5ff/public_url" target="_blank" rel="noopener noreferrer" class="certification-action">Verify Credential</a>
             </div>
-          </a>
-
-          <a href="https://www.credly.com/badges/24b184c3-ff50-47fa-bd97-bcd1da1f46ed/public_url" target="_blank" style="text-decoration: none; color: inherit;">
-            <div style="display: flex; flex-direction: column; align-items: center; width: 250px; padding: 10px; border: 2px solid #149ddd; border-radius: 8px; background-color: #e0f7ff;">
-              <img src="assets/img/gitlab-certified-ci-cd-associate.png" alt="GitLab Certified CI/CD Associate" style="max-width: 100%; height: auto; border-radius: 8px;">
-              <span style="margin-top: 10px; text-align: center; font-weight: bold;">GitLab Certified CI/CD Associate</span>
+          </article>
+          <article class="certification-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="certification-badge-wrap">
+              <img src="assets/img/gitlab-certified-project-management-associate.png" alt="GitLab Certified Project Management Associate" class="certification-badge-image">
             </div>
-          </a>
-
-          <a href="https://www.credly.com/badges/514c82d0-a87a-4062-ac55-a02195455d53/public_url" target="_blank" style="text-decoration: none; color: inherit;">
-            <div style="display: flex; flex-direction: column; align-items: center; width: 250px; padding: 10px; border: 2px solid #149ddd; border-radius: 8px; background-color: #e0f7ff;">
-              <img src="assets/img/gitlab-certified-services-engineer-professional.png" alt="GitLab Certified Service Engineer Professional" style="max-width: 100%; height: auto; border-radius: 8px;">
-              <span style="margin-top: 10px; text-align: center; font-weight: bold;">GitLab Certified Services Engineer Professional</span>
+            <div class="certification-copy">
+              <p class="certification-issuer">GitLab</p>
+              <h3>Project Management Associate</h3>
+              <div class="certification-tags">
+                <span class="focus-pill">Workflow Ops</span>
+                <span class="focus-pill">Team Delivery</span>
+              </div>
+              <a href="https://www.credly.com/badges/26ad62be-4ac4-4034-a992-a0aa730f5f2c/public_url" target="_blank" rel="noopener noreferrer" class="certification-action">Verify Credential</a>
             </div>
-          </a>
-          <div style="display: flex; flex-direction: column; align-items: center; width: 250px; padding: 10px; border: 2px solid #149ddd; border-radius: 8px; background-color: #e0f7ff;">
-            <img src="assets/img/Java_full_stack_developer.jpg" alt="Java J2EE by Java by Kiran" style="max-width: 100%; height: auto; border-radius: 8px;">
-            <span style="margin-top: 10px; text-align: center; font-weight: bold;">Java Full Stack Developer by Udemy</span>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; width: 250px; padding: 10px; border: 2px solid #149ddd; border-radius: 8px; background-color: #e0f7ff;">
-            <img src="assets/img/Java_J2EE.jpg" alt="Full Stack Java Developer by Udemy" style="max-width: 100%; height: auto; border-radius: 8px;">
-            <span style="margin-top: 10px; text-align: center; font-weight: bold;">Java J2EE by Java By Kiran</span>
-          </div>
+          </article>
+          <article class="certification-card" data-aos="fade-up" data-aos-delay="140">
+            <div class="certification-badge-wrap">
+              <img src="assets/img/gitlab-certified-ci-cd-associate.png" alt="GitLab Certified CI/CD Associate" class="certification-badge-image">
+            </div>
+            <div class="certification-copy">
+              <p class="certification-issuer">GitLab</p>
+              <h3>CI/CD Associate</h3>
+              <div class="certification-tags">
+                <span class="focus-pill">CI/CD</span>
+                <span class="focus-pill">Automation</span>
+              </div>
+              <a href="https://www.credly.com/badges/24b184c3-ff50-47fa-bd97-bcd1da1f46ed/public_url" target="_blank" rel="noopener noreferrer" class="certification-action">Verify Credential</a>
+            </div>
+          </article>
+          <article class="certification-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="certification-badge-wrap">
+              <img src="assets/img/gitlab-certified-services-engineer-professional.png" alt="GitLab Certified Services Engineer Professional" class="certification-badge-image">
+            </div>
+            <div class="certification-copy">
+              <p class="certification-issuer">GitLab</p>
+              <h3>Services Engineer Professional</h3>
+              <div class="certification-tags">
+                <span class="focus-pill">Enterprise Delivery</span>
+                <span class="focus-pill">Platform Services</span>
+              </div>
+              <a href="https://www.credly.com/badges/514c82d0-a87a-4062-ac55-a02195455d53/public_url" target="_blank" rel="noopener noreferrer" class="certification-action">Verify Credential</a>
+            </div>
+          </article>
+          <article class="certification-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="certification-badge-wrap">
+              <img src="assets/img/Java_full_stack_developer.jpg" alt="Java Full Stack Developer by Udemy" class="certification-badge-image">
+            </div>
+            <div class="certification-copy">
+              <p class="certification-issuer">Udemy</p>
+              <h3>Java Full Stack Developer</h3>
+              <div class="certification-tags">
+                <span class="focus-pill">Java</span>
+                <span class="focus-pill">Full Stack</span>
+              </div>
+              <span class="certification-action certification-action-static">Verified Learning</span>
+            </div>
+          </article>
+          <article class="certification-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="certification-badge-wrap">
+              <img src="assets/img/Java_J2EE.jpg" alt="Java J2EE by Java By Kiran" class="certification-badge-image">
+            </div>
+            <div class="certification-copy">
+              <p class="certification-issuer">Java By Kiran</p>
+              <h3>Java J2EE</h3>
+              <div class="certification-tags">
+                <span class="focus-pill">Backend</span>
+                <span class="focus-pill">J2EE</span>
+              </div>
+              <span class="certification-action certification-action-static">Verified Learning</span>
+            </div>
+          </article>
         </div>
-      </div><!-- End Section Title -->
-    </section><!-- /Skills Section -->
+      </div>
+    </section><!-- /Certifications Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -552,7 +1059,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -590,7 +1096,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formsubmit.co/vaibhavgshete@gmail.com" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
         
                 <div class="col-md-6">
@@ -614,73 +1120,14 @@
                 </div>
         
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <!-- <div class="error-message"></div> -->
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-        
                   <button type="submit">Send Message</button>
                 </div>
               </div>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://vaibhavgshete.github.io/#contact">
             </form>
           </div>
-
-          <script>
-            (function () {
-              "use strict";
-
-              let forms = document.querySelectorAll('.php-email-form');
-
-              forms.forEach(function (e) {
-                e.addEventListener('submit', function (event) {
-                  event.preventDefault();
-
-                  let thisForm = this;
-
-                  // thisForm.querySelector('.loading').classList.add('d-block');
-                  // thisForm.querySelector('.error-message').classList.remove('d-block');
-                  thisForm.querySelector('.sent-message').classList.remove('d-block');
-
-                  let formData = new FormData(thisForm);
-                  let formObject = {};
-                  formData.forEach((value, key) => {
-                    formObject[key] = value;
-                  });
-
-                  let emailBody = `Name: ${formObject.name}<br>Email: ${formObject.email}<br>Subject: ${formObject.subject}<br>Message: ${formObject.message}`;
-
-                  Email.send({
-                    Host: "smtp.elasticemail.com",
-                    Username: "vaibhavgshete@gmail.com",
-                    Password: "C4498FBA5FEA932462AEAB844A33E01AD07E", // Use your actual password here
-                    To: 'vaibhavgshete@gmail.com', // Send to your own email address
-                    From: "vaibhavgshete@gmail.com", // Fixed "From" address
-                    ReplyTo: formObject.email, // Use the email provided in the form as the "Reply-To" address
-                    Subject: formObject.subject,
-                    Body: emailBody
-                  }).then(
-                    message => {
-                      thisForm.querySelector('.loading').classList.remove('d-block');
-                      if (message === 'OK') {
-                        thisForm.querySelector('.sent-message').classList.add('d-block');
-                        thisForm.reset();
-                      } else {
-                        // displayError(thisForm, message);
-                      }
-                    }
-                  ).catch(
-                    // error => displayError(thisForm, error.message || 'An unknown error occurred')
-                  );
-                });
-              });
-
-              function displayError(thisForm, error) {
-                thisForm.querySelector('.loading').classList.remove('d-block');
-                // thisForm.querySelector('.error-message').innerHTML = error;
-                // thisForm.querySelector('.error-message').classList.add('d-block');
-              }
-
-            })();
-          </script>
 
         </div>
 
@@ -690,11 +1137,84 @@
 
   </main>
 
+  <div class="portfolio-assistant">
+    <button class="assistant-fab" type="button" aria-label="Open portfolio assistant" aria-expanded="false" aria-controls="assistant-panel">
+      <span class="assistant-fab-mark">VS</span>
+      <span class="assistant-fab-pulse"></span>
+    </button>
+
+    <section id="assistant-panel" class="assistant-panel" aria-hidden="true">
+      <div class="assistant-panel-header">
+        <div class="assistant-panel-brand">
+          <span class="brand-mark" aria-hidden="true">VS<span class="brand-mark-accent">_</span></span>
+          <div>
+            <strong>Portfolio Assistant</strong>
+            <span>Frontend command interface</span>
+          </div>
+        </div>
+        <button class="assistant-close" type="button" aria-label="Close assistant">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="assistant-panel-body">
+        <div class="assistant-console" id="assistant-console">
+          <div class="assistant-message assistant-message-bot">
+            <p>Portfolio assistant ready. Ask about Kubernetes, CI/CD, projects, certifications, contact, resume, or use the quick actions below.</p>
+          </div>
+        </div>
+
+        <div class="assistant-quick-actions">
+          <button type="button" class="assistant-chip" data-command="resume">View Resume</button>
+          <button type="button" class="assistant-chip" data-command="projects">Show Projects</button>
+          <button type="button" class="assistant-chip" data-command="kubernetes">Kubernetes Experience</button>
+          <button type="button" class="assistant-chip" data-command="contact">Contact Info</button>
+          <button type="button" class="assistant-chip" data-command="certifications">Certifications</button>
+        </div>
+
+        <form class="assistant-form" id="assistant-form">
+          <label class="assistant-label" for="assistant-input">Command</label>
+          <div class="assistant-input-wrap">
+            <span class="assistant-prompt">/</span>
+            <input id="assistant-input" class="assistant-input" type="text" name="assistant" autocomplete="off" placeholder="Type kubernetes, projects, resume, contact..." />
+            <button class="assistant-submit" type="submit">Run</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer brand-footer">
+    <div class="container footer-shell">
+      <div class="footer-brand">
+        <div class="footer-mark">
+          <span class="brand-mark" aria-hidden="true">VS<span class="brand-mark-accent">_</span></span>
+        </div>
+        <div class="footer-copy">
+          <strong>Vaibhav Shete</strong>
+          <p>Engineering resilient platform systems, distributed execution environments, and automation-first delivery pipelines.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/vaibhavgshete" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/vaibhavgshete" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:vaibhavgshete@gmail.com">Email</a>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; 2026 Vaibhav Shete</span>
+      </div>
+    </div>
+  </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <div id="preloader">
+    <div class="preloader-brand" aria-hidden="true">
+      <span class="brand-mark">VS<span class="brand-mark-accent">_</span></span>
+    </div>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -711,6 +1231,37 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Typed Terminal Animation -->
+  <script>
+    var typed = new Typed('#typed-terminal', {
+      strings: [
+`$ whoami
+
+Vaibhav Shete
+
+$ current_role
+
+Software Research Engineer
+
+$ technologies --core
+
+Kubernetes
+Docker
+AWS
+GitLab
+Distributed Systems
+
+$ status
+
+Building scalable simulation infrastructure...`
+      ],
+      typeSpeed: 30,
+      showCursor: true,
+      cursorChar: '_'
+    });
+  </script>
+
 </body>
 
 </html>
+
