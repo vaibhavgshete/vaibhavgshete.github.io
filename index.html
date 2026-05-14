@@ -46,7 +46,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page portfolio-modern">
+<body class="index-page portfolio-modern theme-dark">
 
   <!-- Floating Navbar -->
   <nav class="floating-navbar" aria-label="Primary navigation">
@@ -65,6 +65,13 @@
     </ul>
 
     <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <span class="theme-toggle-track">
+          <i class="bi bi-sun-fill theme-icon theme-icon-sun" aria-hidden="true"></i>
+          <i class="bi bi-moon-stars-fill theme-icon theme-icon-moon" aria-hidden="true"></i>
+          <span class="theme-toggle-thumb" aria-hidden="true"></span>
+        </span>
+      </button>
       <a href="assets/docs/Vaibhav_Shete_Resume.pdf" download class="resume-btn">
         Resume
       </a>
@@ -118,7 +125,7 @@
           FOR AUTONOMOUS SYSTEMS
         </h1>
         <p class="hero-subtitle">
-          Distributed Systems | Platform Engineering | CI/CD | Kubernetes
+          Distributed Systems &bull; Platform Engineering &bull; CI/CD &bull; Kubernetes
         </p>
         <div class="hero-buttons">
           <a href="#projects" class="btn-primary">View Projects</a>
@@ -1137,53 +1144,6 @@
     </section><!-- /Contact Section -->
 
   </main>
-
-  <div class="portfolio-assistant">
-    <button class="assistant-fab" type="button" aria-label="Open portfolio assistant" aria-expanded="false" aria-controls="assistant-panel">
-      <span class="assistant-fab-mark">VS</span>
-      <span class="assistant-fab-pulse"></span>
-    </button>
-
-    <section id="assistant-panel" class="assistant-panel" aria-hidden="true">
-      <div class="assistant-panel-header">
-        <div class="assistant-panel-brand">
-          <span class="brand-mark" aria-hidden="true">VS<span class="brand-mark-accent">_</span></span>
-          <div>
-            <strong>Portfolio Assistant</strong>
-            <span>Frontend command interface</span>
-          </div>
-        </div>
-        <button class="assistant-close" type="button" aria-label="Close assistant">
-          <i class="bi bi-x-lg"></i>
-        </button>
-      </div>
-
-      <div class="assistant-panel-body">
-        <div class="assistant-console" id="assistant-console">
-          <div class="assistant-message assistant-message-bot">
-            <p>Portfolio assistant ready. Ask about Kubernetes, CI/CD, projects, certifications, contact, resume, or use the quick actions below.</p>
-          </div>
-        </div>
-
-        <div class="assistant-quick-actions">
-          <button type="button" class="assistant-chip" data-command="resume">View Resume</button>
-          <button type="button" class="assistant-chip" data-command="projects">Show Projects</button>
-          <button type="button" class="assistant-chip" data-command="kubernetes">Kubernetes Experience</button>
-          <button type="button" class="assistant-chip" data-command="contact">Contact Info</button>
-          <button type="button" class="assistant-chip" data-command="certifications">Certifications</button>
-        </div>
-
-        <form class="assistant-form" id="assistant-form">
-          <label class="assistant-label" for="assistant-input">Command</label>
-          <div class="assistant-input-wrap">
-            <span class="assistant-prompt">/</span>
-            <input id="assistant-input" class="assistant-input" type="text" name="assistant" autocomplete="off" placeholder="Type kubernetes, projects, resume, contact..." />
-            <button class="assistant-submit" type="submit">Run</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </div>
 
   <footer class="footer brand-footer">
     <div class="container footer-shell">

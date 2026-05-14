@@ -1126,12 +1126,74 @@ section,
   --surface-color: #111827;
   --accent-color: #149ddd;
   --contrast-color: #ffffff;
-  color: var(--default-color);
+  --bg-primary: #0b0f19;
+  --bg-secondary: #09111f;
+  --bg-elevated: #0f172a;
+  --card-bg: linear-gradient(180deg, rgba(15, 23, 42, 0.84) 0%, rgba(9, 17, 31, 0.96) 100%);
+  --card-bg-soft: rgba(15, 23, 42, 0.48);
+  --card-bg-solid: rgba(17, 24, 39, 0.94);
+  --card-bg-muted: rgba(15, 23, 42, 0.62);
+  --nav-bg: rgba(15, 23, 42, 0.58);
+  --nav-bg-scrolled: rgba(15, 23, 42, 0.72);
+  --text-primary: #f8fafc;
+  --text-secondary: #d9e2f2;
+  --text-muted: #9fb0c7;
+  --text-subtle: #8ea2bb;
+  --text-faint: #cbd5e1;
+  --accent: #149ddd;
+  --accent-strong: #0d7cb5;
+  --accent-soft: #56c6ff;
+  --border-color: rgba(148, 163, 184, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.1);
+  --border-accent: rgba(56, 189, 248, 0.26);
+  --glow-color: rgba(20, 157, 221, 0.2);
+  --glow-soft: rgba(56, 189, 248, 0.12);
+  --shadow-color: rgba(0, 0, 0, 0.28);
+  --shadow-strong: rgba(0, 0, 0, 0.36);
+  --surface-grid-line: rgba(148, 163, 184, 0.06);
+  --status-ok: #22c55e;
+  --theme-transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, fill 0.35s ease, stroke 0.35s ease;
+  color: var(--text-secondary);
   background:
-    radial-gradient(circle at top right, rgba(20, 157, 221, 0.12), transparent 28%),
-    linear-gradient(180deg, #0b0f19 0%, #09111f 100%);
+    radial-gradient(circle at top right, var(--glow-soft), transparent 28%),
+    linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+}
+
+.portfolio-modern.theme-light {
+  --background-color: #eef3fb;
+  --default-color: #213042;
+  --heading-color: #0f172a;
+  --surface-color: #ffffff;
+  --accent-color: #2563eb;
+  --contrast-color: #ffffff;
+  --bg-primary: #eef3fb;
+  --bg-secondary: #dde6f3;
+  --bg-elevated: #f7faff;
+  --card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(240, 246, 255, 0.94) 100%);
+  --card-bg-soft: rgba(255, 255, 255, 0.78);
+  --card-bg-solid: rgba(255, 255, 255, 0.96);
+  --card-bg-muted: rgba(243, 247, 255, 0.9);
+  --nav-bg: rgba(255, 255, 255, 0.72);
+  --nav-bg-scrolled: rgba(255, 255, 255, 0.84);
+  --text-primary: #0f172a;
+  --text-secondary: #213042;
+  --text-muted: #52637a;
+  --text-subtle: #64748b;
+  --text-faint: #3d4d63;
+  --accent: #2563eb;
+  --accent-strong: #1d4ed8;
+  --accent-soft: #3b82f6;
+  --border-color: rgba(148, 163, 184, 0.24);
+  --border-strong: rgba(148, 163, 184, 0.32);
+  --border-accent: rgba(37, 99, 235, 0.28);
+  --glow-color: rgba(37, 99, 235, 0.16);
+  --glow-soft: rgba(59, 130, 246, 0.1);
+  --shadow-color: rgba(15, 23, 42, 0.12);
+  --shadow-strong: rgba(15, 23, 42, 0.16);
+  --surface-grid-line: rgba(148, 163, 184, 0.12);
+  --status-ok: #16a34a;
 }
 
 .portfolio-modern::before,
@@ -1152,13 +1214,13 @@ section,
 .portfolio-modern::before {
   top: -10vw;
   right: -8vw;
-  background: rgba(56, 189, 248, 0.12);
+  background: var(--glow-soft);
 }
 
 .portfolio-modern::after {
   bottom: -12vw;
   left: -10vw;
-  background: rgba(20, 157, 221, 0.08);
+  background: var(--glow-color);
   animation-duration: 24s;
 }
 
@@ -1176,6 +1238,19 @@ html {
 .portfolio-modern h5,
 .portfolio-modern h6 {
   font-family: "Inter", sans-serif;
+  color: var(--text-primary);
+}
+
+.portfolio-modern,
+.portfolio-modern p,
+.portfolio-modern li,
+.portfolio-modern span,
+.portfolio-modern strong,
+.portfolio-modern a,
+.portfolio-modern button,
+.portfolio-modern input,
+.portfolio-modern textarea {
+  transition: var(--theme-transition);
 }
 
 /*--------------------------------------------------------------
@@ -1228,13 +1303,13 @@ html {
   justify-content: space-between;
   gap: 24px;
   padding: 16px 28px;
-  background: rgba(15, 23, 42, 0.58);
+  background: var(--nav-bg);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-strong);
   border-radius: 18px;
   z-index: 9999;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 8px 32px var(--shadow-color);
   transition:
     transform 0.35s ease,
     padding 0.35s ease,
@@ -1248,7 +1323,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #fff;
+  color: var(--text-primary);
   font-weight: 700;
   font-size: 18px;
   font-family: "Inter", sans-serif;
@@ -1263,10 +1338,10 @@ html {
   min-width: 54px;
   height: 38px;
   padding: 0 10px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
-  background: linear-gradient(180deg, rgba(17, 24, 39, 0.96), rgba(15, 23, 42, 0.72));
-  color: #f8fafc;
+  background: linear-gradient(180deg, var(--card-bg-solid), var(--card-bg-soft));
+  color: var(--text-primary);
   font-family: "JetBrains Mono", monospace;
   font-size: 15px;
   font-weight: 700;
@@ -1275,11 +1350,11 @@ html {
 }
 
 .portfolio-modern .brand-mark-accent {
-  color: #56c6ff;
+  color: var(--accent-soft);
 }
 
 .portfolio-modern .brand-wordmark {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .portfolio-modern .nav-links {
@@ -1292,7 +1367,7 @@ html {
 }
 
 .portfolio-modern .nav-links a {
-  color: #cbd5e1;
+  color: var(--text-faint);
   font-weight: 500;
   text-decoration: none;
   transition:
@@ -1302,14 +1377,76 @@ html {
 }
 
 .portfolio-modern .nav-links a:hover {
-  color: #fff;
+  color: var(--text-primary);
   transform: translateY(-1px);
 }
 
 .portfolio-modern .nav-actions {
   display: flex;
   align-items: center;
+  gap: 12px;
   flex-shrink: 0;
+}
+
+.portfolio-modern .theme-toggle {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.portfolio-modern .theme-toggle-track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 64px;
+  height: 44px;
+  padding: 0 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--card-bg-soft);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-modern .theme-toggle:hover .theme-toggle-track {
+  border-color: var(--border-accent);
+  box-shadow: 0 12px 26px var(--glow-color);
+  transform: translateY(-1px);
+}
+
+.portfolio-modern .theme-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.portfolio-modern .theme-icon-sun {
+  color: #f59e0b;
+}
+
+.portfolio-modern .theme-icon-moon {
+  color: var(--accent-soft);
+}
+
+.portfolio-modern .theme-toggle-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--card-bg-solid), var(--bg-elevated));
+  box-shadow: 0 10px 22px var(--shadow-color);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-modern.theme-light .theme-toggle-thumb {
+  transform: translateX(20px);
 }
 
 .portfolio-modern .resume-btn {
@@ -1317,8 +1454,8 @@ html {
   align-items: center;
   justify-content: center;
   padding: 12px 22px;
-  background: #149ddd;
-  color: #fff;
+  background: var(--accent);
+  color: var(--contrast-color);
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
@@ -1326,23 +1463,23 @@ html {
     background-color 0.3s ease,
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  box-shadow: 0 10px 24px rgba(20, 157, 221, 0.22);
+  box-shadow: 0 10px 24px var(--glow-color);
 }
 
 .portfolio-modern .resume-btn:hover {
-  background: #0d7cb5;
-  color: #fff;
+  background: var(--accent-strong);
+  color: var(--contrast-color);
   transform: translateY(-1px);
-  box-shadow: 0 14px 30px rgba(20, 157, 221, 0.28);
+  box-shadow: 0 14px 30px var(--glow-color);
 }
 
 .portfolio-modern .floating-navbar.is-scrolled {
   padding: 12px 24px;
-  background: rgba(15, 23, 42, 0.72);
+  background: var(--nav-bg-scrolled);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.32);
+  border-color: var(--border-strong);
+  box-shadow: 0 14px 42px var(--shadow-strong);
 }
 
 .portfolio-modern .section-title h2 {
@@ -1360,7 +1497,7 @@ html {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #56c6ff;
+  color: var(--accent-soft);
 }
 
 .portfolio-modern .about-dashboard .section-title h2::before {
@@ -1405,7 +1542,7 @@ html {
     clamp(132px, 16vh, 164px)
     clamp(24px, 6vw, 80px)
     clamp(56px, 8vh, 88px);
-  color: #fff;
+  color: var(--text-primary);
   background: transparent;
   position: relative;
   overflow: hidden;
@@ -1418,7 +1555,7 @@ html {
   width: min(42vw, 520px);
   height: min(42vw, 520px);
   border-radius: 50%;
-  background: rgba(20, 157, 221, 0.14);
+  background: var(--glow-color);
   filter: blur(120px);
   z-index: 0;
 }
@@ -1443,7 +1580,7 @@ html {
 
 .portfolio-modern .hero-tag {
   margin-bottom: 20px;
-  color: #38bdf8;
+  color: var(--accent-soft);
   font-size: 14px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -1452,7 +1589,7 @@ html {
 
 .portfolio-modern .hero-left h1 {
   margin-bottom: 24px;
-  color: #f8fafc;
+  color: var(--text-primary);
   font-size: clamp(42px, 7vw, 76px);
   line-height: 0.98;
   letter-spacing: -0.05em;
@@ -1463,7 +1600,7 @@ html {
 .portfolio-modern .hero-subtitle {
   margin-bottom: 36px;
   max-width: 680px;
-  color: #9fb0c7;
+  color: var(--text-muted);
   font-size: clamp(17px, 2vw, 20px);
   line-height: 1.7;
 }
@@ -1495,38 +1632,38 @@ html {
 }
 
 .portfolio-modern .btn-primary {
-  background: #149ddd;
-  color: #fff;
-  box-shadow: 0 16px 32px rgba(20, 157, 221, 0.22);
+  background: var(--accent);
+  color: var(--contrast-color);
+  box-shadow: 0 16px 32px var(--glow-color);
 }
 
 .portfolio-modern .btn-primary:hover {
-  background: #0d7cb5;
-  color: #fff;
+  background: var(--accent-strong);
+  color: var(--contrast-color);
   transform: translateY(-1px);
   filter: brightness(1.04);
 }
 
 .portfolio-modern .btn-secondary {
-  border: 1px solid rgba(148, 163, 184, 0.28);
-  background: rgba(15, 23, 42, 0.35);
-  color: #fff;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg-soft);
+  color: var(--text-primary);
 }
 
 .portfolio-modern .btn-secondary:hover {
-  border-color: #149ddd;
-  color: #fff;
+  border-color: var(--accent);
+  color: var(--text-primary);
   transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(20, 157, 221, 0.12);
+  box-shadow: 0 12px 24px var(--glow-color);
 }
 
 .portfolio-modern .terminal-window {
   width: min(100%, 620px);
-  background: rgba(17, 24, 39, 0.94);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: var(--card-bg-solid);
+  border: 1px solid var(--border-color);
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 24px 80px var(--shadow-strong);
   backdrop-filter: blur(12px);
 }
 
@@ -1534,7 +1671,7 @@ html {
   display: flex;
   gap: 10px;
   padding: 14px 16px;
-  background: rgba(31, 41, 55, 0.95);
+  background: var(--card-bg-muted);
 }
 
 .portfolio-modern .dot {
@@ -1558,7 +1695,7 @@ html {
 .portfolio-modern .terminal-body {
   min-height: 350px;
   padding: 30px;
-  color: #d1d5db;
+  color: var(--text-secondary);
   font-size: 15px;
   line-height: 1.85;
   font-family: "JetBrains Mono", monospace;
@@ -2009,328 +2146,6 @@ html {
 
 .portfolio-modern .certification-action-static {
   cursor: default;
-}
-
-.portfolio-modern .assistant-target-flash {
-  animation: assistantTargetFlash 1.6s ease;
-}
-
-@keyframes assistantTargetFlash {
-  0%,
-  100% {
-    box-shadow: none;
-  }
-
-  35% {
-    box-shadow: 0 0 0 1px rgba(86, 198, 255, 0.24), 0 0 28px rgba(20, 157, 221, 0.18);
-  }
-}
-
-/*--------------------------------------------------------------
-# Portfolio Assistant
---------------------------------------------------------------*/
-.portfolio-modern .portfolio-assistant {
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-  z-index: 10001;
-}
-
-.portfolio-modern .assistant-fab {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 20px;
-  background: rgba(15, 23, 42, 0.76);
-  color: #f8fafc;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease,
-    background-color 0.3s ease;
-}
-
-.portfolio-modern .assistant-fab:hover {
-  transform: translateY(-3px) scale(1.02);
-  border-color: rgba(86, 198, 255, 0.3);
-  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.34), 0 0 24px rgba(20, 157, 221, 0.16);
-}
-
-.portfolio-modern .assistant-fab-mark {
-  position: relative;
-  z-index: 1;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-.portfolio-modern .assistant-fab-pulse {
-  position: absolute;
-  inset: 10px;
-  border-radius: 16px;
-  background: radial-gradient(circle, rgba(86, 198, 255, 0.18), transparent 70%);
-  opacity: 0.75;
-}
-
-.portfolio-modern .assistant-panel {
-  position: absolute;
-  right: 0;
-  bottom: 84px;
-  width: min(420px, calc(100vw - 28px));
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(12px) scale(0.98);
-  transform-origin: bottom right;
-  transition:
-    opacity 0.28s ease,
-    transform 0.28s ease,
-    visibility 0.28s ease;
-}
-
-.portfolio-modern .assistant-panel.is-open {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
-}
-
-.portfolio-modern .assistant-panel > * {
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(9, 17, 31, 0.97) 100%);
-  border: 1px solid rgba(148, 163, 184, 0.14);
-  border-radius: 26px;
-  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.34);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-}
-
-.portfolio-modern .assistant-panel-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 18px 18px 0;
-}
-
-.portfolio-modern .assistant-panel-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.portfolio-modern .assistant-panel-brand strong {
-  display: block;
-  color: #f8fafc;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.portfolio-modern .assistant-panel-brand span:last-child {
-  color: #8ea2bb;
-  font-size: 12px;
-}
-
-.portfolio-modern .assistant-close {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  border-radius: 12px;
-  background: rgba(15, 23, 42, 0.62);
-  color: #dbe7f6;
-  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
-}
-
-.portfolio-modern .assistant-close:hover {
-  transform: translateY(-1px);
-  border-color: rgba(86, 198, 255, 0.24);
-  background: rgba(15, 23, 42, 0.82);
-}
-
-.portfolio-modern .assistant-panel-body {
-  padding: 16px 18px 18px;
-}
-
-.portfolio-modern .assistant-console {
-  display: grid;
-  gap: 12px;
-  max-height: 320px;
-  padding: 16px;
-  overflow-y: auto;
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  border-radius: 18px;
-  background:
-    linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
-    rgba(9, 17, 31, 0.92);
-  background-size: 22px 22px, 22px 22px, auto;
-}
-
-.portfolio-modern .assistant-message {
-  max-width: 92%;
-  padding: 12px 14px;
-  border-radius: 14px;
-  font-size: 13px;
-  line-height: 1.65;
-}
-
-.portfolio-modern .assistant-message p {
-  margin: 0;
-}
-
-.portfolio-modern .assistant-message-bot {
-  justify-self: start;
-  border: 1px solid rgba(86, 198, 255, 0.14);
-  background: rgba(20, 157, 221, 0.08);
-  color: #dbe7f6;
-}
-
-.portfolio-modern .assistant-message-user {
-  justify-self: end;
-  border: 1px solid rgba(148, 163, 184, 0.14);
-  background: rgba(15, 23, 42, 0.72);
-  color: #f8fafc;
-}
-
-.portfolio-modern .assistant-message-typing {
-  justify-self: start;
-  display: inline-flex;
-  gap: 6px;
-  align-items: center;
-}
-
-.portfolio-modern .assistant-message-typing span {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #56c6ff;
-  opacity: 0.8;
-  animation: assistantTyping 1s ease-in-out infinite;
-}
-
-.portfolio-modern .assistant-message-typing span:nth-child(2) {
-  animation-delay: 0.15s;
-}
-
-.portfolio-modern .assistant-message-typing span:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-@keyframes assistantTyping {
-  0%,
-  100% {
-    transform: translateY(0);
-    opacity: 0.35;
-  }
-
-  50% {
-    transform: translateY(-3px);
-    opacity: 1;
-  }
-}
-
-.portfolio-modern .assistant-quick-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
-  margin-bottom: 14px;
-}
-
-.portfolio-modern .assistant-chip {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 38px;
-  padding: 10px 12px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  border-radius: 999px;
-  background: rgba(15, 23, 42, 0.58);
-  color: #dbe7f6;
-  font-size: 12px;
-  font-weight: 600;
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    background-color 0.3s ease;
-}
-
-.portfolio-modern .assistant-chip:hover {
-  transform: translateY(-1px);
-  border-color: rgba(86, 198, 255, 0.26);
-  background: rgba(15, 23, 42, 0.78);
-}
-
-.portfolio-modern .assistant-form {
-  display: grid;
-  gap: 8px;
-}
-
-.portfolio-modern .assistant-label {
-  color: #8ea2bb;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-family: "JetBrains Mono", monospace;
-}
-
-.portfolio-modern .assistant-input-wrap {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 10px 10px 12px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  border-radius: 16px;
-  background: rgba(9, 17, 31, 0.92);
-}
-
-.portfolio-modern .assistant-prompt {
-  color: #56c6ff;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 14px;
-}
-
-.portfolio-modern .assistant-input {
-  min-width: 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  color: #f8fafc;
-  font-size: 14px;
-}
-
-.portfolio-modern .assistant-input::placeholder {
-  color: #6f829a;
-}
-
-.portfolio-modern .assistant-submit {
-  min-height: 38px;
-  padding: 8px 14px;
-  border: 1px solid rgba(86, 198, 255, 0.18);
-  border-radius: 12px;
-  background: rgba(20, 157, 221, 0.1);
-  color: #f8fafc;
-  font-size: 12px;
-  font-weight: 600;
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    background-color 0.3s ease;
-}
-
-.portfolio-modern .assistant-submit:hover {
-  transform: translateY(-1px);
-  border-color: rgba(86, 198, 255, 0.28);
-  background: rgba(20, 157, 221, 0.16);
 }
 
 /*--------------------------------------------------------------
@@ -3290,8 +3105,7 @@ html {
 
   .portfolio-modern::before,
   .portfolio-modern::after,
-  .portfolio-modern .profile-frame,
-  .portfolio-modern .assistant-message-typing span {
+  .portfolio-modern .profile-frame {
     animation: none !important;
   }
 }
@@ -3420,6 +3234,244 @@ html {
 }
 
 /*--------------------------------------------------------------
+# Theme System
+--------------------------------------------------------------*/
+.portfolio-modern .experience-timeline .section-title p,
+.portfolio-modern .education-showcase .section-title p,
+.portfolio-modern .certifications-showcase .section-title p,
+.portfolio-modern .about-dashboard .section-title p,
+.portfolio-modern .projects-showcase .section-title p,
+.portfolio-modern .skills-showcase .section-title p,
+.portfolio-modern .profile-summary,
+.portfolio-modern .education-summary,
+.portfolio-modern .experience-summary,
+.portfolio-modern .project-description,
+.portfolio-modern .skill-card-body p,
+.portfolio-modern .footer-copy p,
+.portfolio-modern .contact-card span:last-child,
+.portfolio-modern .status-item span:last-child,
+.portfolio-modern .highlight-value,
+.portfolio-modern .metric-chip span,
+.portfolio-modern .metric-card span {
+  color: var(--text-muted);
+}
+
+.portfolio-modern .contact-card strong,
+.portfolio-modern .status-item strong,
+.portfolio-modern .highlight-key,
+.portfolio-modern .metric-chip strong,
+.portfolio-modern .metric-card strong,
+.portfolio-modern .footer-copy strong {
+  color: var(--text-primary);
+}
+
+.portfolio-modern .experience-meta,
+.portfolio-modern .education-meta,
+.portfolio-modern .metric-label,
+.portfolio-modern .project-meta,
+.portfolio-modern .footer-links a,
+.portfolio-modern .footer-meta span {
+  color: var(--text-subtle);
+}
+
+.portfolio-modern .experience-role,
+.portfolio-modern .education-school,
+.portfolio-modern .certification-issuer,
+.portfolio-modern .profile-kicker,
+.portfolio-modern .panel-kicker,
+.portfolio-modern .preview-label,
+.portfolio-modern .skill-group-kicker {
+  color: var(--accent-soft);
+}
+
+.portfolio-modern .experience-card,
+.portfolio-modern .education-card,
+.portfolio-modern .certification-card,
+.portfolio-modern .dashboard-card,
+.portfolio-modern .project-card,
+.portfolio-modern .skill-group,
+.portfolio-modern .contact.section .info-wrap,
+.portfolio-modern .contact.section .php-email-form {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 22px 60px var(--shadow-color);
+}
+
+.portfolio-modern .experience-card::before,
+.portfolio-modern .education-card::before,
+.portfolio-modern .certification-card::before,
+.portfolio-modern .dashboard-card::before,
+.portfolio-modern .project-card::before,
+.portfolio-modern .skill-group::before {
+  background: radial-gradient(circle at top right, var(--glow-soft), transparent 32%);
+}
+
+.portfolio-modern .timeline-entry:hover .experience-card,
+.portfolio-modern .education-card:hover,
+.portfolio-modern .certification-card:hover,
+.portfolio-modern .dashboard-card:hover,
+.portfolio-modern .project-card:hover,
+.portfolio-modern .skill-card:hover,
+.portfolio-modern .contact-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: 0 28px 72px var(--shadow-strong);
+}
+
+.portfolio-modern .timeline-track {
+  background: linear-gradient(180deg, transparent, var(--accent-soft), transparent);
+  box-shadow: 0 0 18px var(--glow-color);
+}
+
+.portfolio-modern .timeline-node {
+  border-color: var(--accent-soft);
+  background: var(--bg-primary);
+  box-shadow: 0 0 0 6px var(--glow-soft), 0 0 22px var(--glow-color);
+}
+
+.portfolio-modern .company-badge,
+.portfolio-modern .education-badge,
+.portfolio-modern .skill-icon,
+.portfolio-modern .contact-icon,
+.portfolio-modern .theme-toggle-track,
+.portfolio-modern .certification-badge-wrap {
+  border-color: var(--border-color);
+  background: linear-gradient(180deg, var(--card-bg-solid), var(--card-bg-soft));
+}
+
+.portfolio-modern .company-badge,
+.portfolio-modern .education-badge,
+.portfolio-modern .skill-icon,
+.portfolio-modern .contact-icon,
+.portfolio-modern .footer-mark,
+.portfolio-modern .preloader-brand .brand-mark {
+  color: var(--text-primary);
+}
+
+.portfolio-modern .metric-chip,
+.portfolio-modern .metric-card,
+.portfolio-modern .focus-pill,
+.portfolio-modern .stack-pill,
+.portfolio-modern .certification-action,
+.portfolio-modern .project-btn,
+.portfolio-modern .status-item,
+.portfolio-modern .highlight-row {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+.portfolio-modern .project-btn,
+.portfolio-modern .certification-action {
+  color: var(--text-secondary);
+}
+
+.portfolio-modern .project-btn-primary,
+.portfolio-modern .contact .php-email-form button[type=submit],
+.portfolio-modern .scroll-top {
+  background: var(--accent);
+  color: var(--contrast-color);
+  box-shadow: 0 16px 32px var(--glow-color);
+}
+
+.portfolio-modern .project-btn-primary:hover,
+.portfolio-modern .contact .php-email-form button[type=submit]:hover,
+.portfolio-modern .contact .php-email-form button[type=submit]:focus {
+  background: var(--accent-strong);
+}
+
+.portfolio-modern .project-btn:hover,
+.portfolio-modern .certification-action:hover {
+  border-color: var(--border-accent);
+  color: var(--text-primary);
+  box-shadow: 0 14px 28px var(--glow-color);
+}
+
+.portfolio-modern .project-preview,
+.portfolio-modern .terminal-header,
+.portfolio-modern .contact .info-item,
+.portfolio-modern .contact .php-email-form input,
+.portfolio-modern .contact .php-email-form textarea {
+  background: var(--card-bg-soft);
+}
+
+.portfolio-modern .project-preview,
+.portfolio-modern .terminal-window,
+.portfolio-modern .contact.section .info-wrap,
+.portfolio-modern .contact.section .php-email-form {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.portfolio-modern .preview-grid {
+  background-image:
+    linear-gradient(var(--surface-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--surface-grid-line) 1px, transparent 1px);
+}
+
+.portfolio-modern .preview-node,
+.portfolio-modern .preview-rail,
+.portfolio-modern .preview-bar,
+.portfolio-modern .preview-track,
+.portfolio-modern .preview-cluster span,
+.portfolio-modern .preview-card-stack span,
+.portfolio-modern .preview-flow span,
+.portfolio-modern .preview-pipeline span,
+.portfolio-modern .preview-signal {
+  background: color-mix(in srgb, var(--accent-soft) 78%, white 22%);
+}
+
+.portfolio-modern .contact .info-item i {
+  background: var(--accent);
+  color: var(--contrast-color);
+}
+
+.portfolio-modern .contact .info-item h3,
+.portfolio-modern .contact .info-item p,
+.portfolio-modern .contact .php-email-form label,
+.portfolio-modern .contact .php-email-form .sent-message,
+.portfolio-modern .contact .php-email-form input,
+.portfolio-modern .contact .php-email-form textarea {
+  color: var(--text-secondary);
+}
+
+.portfolio-modern .contact .php-email-form input,
+.portfolio-modern .contact .php-email-form textarea {
+  border-color: var(--border-color);
+}
+
+.portfolio-modern .contact .php-email-form input::placeholder,
+.portfolio-modern .contact .php-email-form textarea::placeholder {
+  color: var(--text-subtle);
+}
+
+.portfolio-modern .brand-footer {
+  border-top: 1px solid var(--border-color);
+}
+
+.portfolio-modern .footer-links a:hover {
+  color: var(--text-primary);
+}
+
+.portfolio-modern #preloader {
+  background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary));
+}
+
+.portfolio-modern #preloader::before {
+  background: radial-gradient(circle at center, var(--glow-soft), transparent 60%);
+}
+
+.portfolio-modern.theme-light .terminal-window,
+.portfolio-modern.theme-light .contact.section .info-wrap,
+.portfolio-modern.theme-light .contact.section .php-email-form,
+.portfolio-modern.theme-light .project-preview {
+  box-shadow: 0 18px 44px var(--shadow-color);
+}
+
+.portfolio-modern.theme-light .terminal-body,
+.portfolio-modern.theme-light #typed-terminal {
+  color: #1f2937;
+}
+
+/*--------------------------------------------------------------
 # Responsive Styles
 --------------------------------------------------------------*/
 @media (max-width: 992px) {
@@ -3479,10 +3531,6 @@ html {
 
   .portfolio-modern .footer-meta {
     justify-self: start;
-  }
-
-  .portfolio-modern .assistant-panel {
-    width: min(400px, calc(100vw - 28px));
   }
 
   .portfolio-modern .experience-shell {
@@ -3581,47 +3629,6 @@ html {
 
   .portfolio-modern .brand-wordmark {
     font-size: 16px;
-  }
-
-  .portfolio-modern .portfolio-assistant {
-    right: 14px;
-    bottom: 14px;
-  }
-
-  .portfolio-modern .assistant-fab {
-    width: 58px;
-    height: 58px;
-    border-radius: 18px;
-  }
-
-  .portfolio-modern .assistant-panel {
-    right: 0;
-    bottom: 76px;
-    width: min(100vw - 20px, 360px);
-  }
-
-  .portfolio-modern .assistant-panel-header,
-  .portfolio-modern .assistant-panel-body {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .portfolio-modern .assistant-console {
-    max-height: 280px;
-    padding: 14px;
-  }
-
-  .portfolio-modern .assistant-chip {
-    width: 100%;
-  }
-
-  .portfolio-modern .assistant-input-wrap {
-    grid-template-columns: auto 1fr;
-  }
-
-  .portfolio-modern .assistant-submit {
-    grid-column: 1 / -1;
-    width: 100%;
   }
 
   .portfolio-modern .profile-frame {
