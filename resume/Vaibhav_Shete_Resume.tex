@@ -1,0 +1,234 @@
+%-------------------------------------------------------------------------------
+% Resume source for Vaibhav Shete
+% Build: pdflatex Vaibhav_Shete_Resume.tex   (packages: fontawesome5, titlesec, enumitem)
+% Copy the output to assets/docs/Vaibhav_Shete_Resume.pdf for the website.
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[letterpaper,top=0.45in,bottom=0.45in,left=0.5in,right=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{9pt}{7pt}
+
+\pdfgentounicode=1
+
+%----------------------------- Custom commands --------------------------------
+\newcommand{\resumeItem}[1]{\item{#1}}
+
+% Company / degree heading: name, date / role, location
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+% Earlier role at the same company (title, dates)
+\newcommand{\resumeRole}[2]{
+  \par\vspace{4pt}
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={\textbullet}, itemsep=3pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeCompactListStart}{\begin{itemize}[leftmargin=0.15in, label={\textbullet}, itemsep=0pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={$\circ$}, leftmargin=0.25in, itemsep=0pt, topsep=1pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%==============================================================================
+\begin{document}
+
+%----------------------------- Heading -----------------------------------------
+\begin{center}
+  {\Huge \textbf{Vaibhav Shete}} \\ \vspace{4pt}
+  \faMapMarker*\ India \quad
+  \href{https://linkedin.com/in/vaibhavgshete}{\faLinkedin\ linkedin.com/in/vaibhavgshete} \quad
+  \href{mailto:vaibhavgshete@gmail.com}{\faEnvelope\ vaibhavgshete@gmail.com} \\ \vspace{2pt}
+  \faPhone*\ +91 9922793667 \quad
+  \href{https://github.com/vaibhavgshete}{\faGithub\ github.com/vaibhavgshete} \quad
+  \href{https://vaibhavgshete.com}{\faGlobe\ vaibhavgshete.com}
+\end{center}
+
+%----------------------------- Summary -----------------------------------------
+\section{Professional Summary}
+DevOps and Platform Engineering lead with 4+ years of experience designing and operating CI/CD pipelines,
+Kubernetes-based infrastructure, and AI workload platforms across cloud and edge environments. Currently
+Assistant Head of Department - DevOps, leading a team that builds and maintains scalable DevOps platforms
+for reliable, secure software delivery. Hands-on with containerized deployments, GitLab runner orchestration,
+and MLOps tooling (MLflow) for teams training and fine-tuning production models. Proven track record of
+automating infrastructure, reducing deployment effort significantly, and delivering reliable systems at scale.
+Open to relocation for the right opportunity.
+
+%----------------------------- Experience --------------------------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Raphe mPhibr Pvt. Ltd. \textmd{\textit{\small (Noida, India)}}}{Oct 2025 -- Present}
+    {Assistant Head of Department - DevOps}{Sep 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Leading a team to build and maintain scalable DevOps platforms for reliable, secure software
+        delivery across AI and autonomous systems programs.}
+      \resumeItem{Managing and load-balancing GitLab Runners across multiple servers, ensuring high availability
+        and consistent CI/CD throughput for autonomous systems workloads.}
+      \resumeItem{Establishing MLflow infrastructure to support AI teams in tracking experiments, versioning
+        models, and managing fine-tuning workflows for open-source and in-house LLMs.}
+      \resumeItem{Designing dual deployment strategy for the AI application stack --- edge deployment for
+        on-device inference and standard cloud deployment for internal platform use.}
+    \resumeItemListEnd
+    \resumeRole{Software Research Engineer - AI and Platform Infrastructure}{Oct 2025 -- Sep 2026}
+    \resumeItemListStart
+      \resumeItem{Architected CI/CD pipelines, containerized workflows, and infrastructure automation to
+        streamline development and testing cycles.}
+      \resumeItem{Architected and deployed a single-node Docker Compose environment for an AI application stack
+        comprising a frontend, backend, Vision Language Model (VLM), and Segment Anything Model (SAM),
+        and initiated its migration to Kubernetes.}
+      \resumeItem{Conducted system benchmarking to evaluate inference performance and resource utilization
+        across GPU-accelerated workloads.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Fineshift Software Pvt. Ltd.}{Nov 2024 -- Oct 2025}
+    {DevOps Engineer (Forward Deployed at Raphe mPhibr) - CI/CD Infrastructure}{Pune, India}
+    \resumeItemListStart
+      \resumeItem{Forward deployed at Raphe mPhibr to build and automate their platform infrastructure; directly
+        contributed to the client engineering roadmap and was subsequently hired full-time.}
+      \resumeItem{Built scalable CI/CD infrastructure using GitLab Runners and Docker, enabling automated build,
+        test, and release workflows for simulation-heavy drone programs.}
+      \resumeItem{Developed a virtual swarm simulation platform capable of running 50+ concurrent drone instances,
+        integrating ArduPilot, QGroundControl, and MissionPlanner in a headless environment.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Datamato Technologies Pvt. Ltd.}{Apr 2022 -- Nov 2024}
+    {Engineer - CI/CD and Automation}{Pune, India}
+    \resumeItemListStart
+      \resumeItem{Designed and delivered One-Click deployment automation using GitLab CI/CD and Shell scripting,
+        reducing deployment effort by up to 90\% across database and filesystem release workflows.}
+      \resumeItem{Led CI/CD automation for enterprise applications using Jenkins, SonarQube, and Nexus, cutting
+        release cycle times by 60\% and reducing manual operations by over 75\%.}
+      \resumeItem{Deployed and managed 20+ microservices on AWS EKS using Kubernetes, Helm, Docker, and Nginx
+        Ingress, improving platform reliability and scalability by up to 80\%.}
+      \resumeItem{Integrated 45+ application modules into unified CI/CD pipelines, streamlining multi-project
+        delivery for application and platform teams.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------------------------- Projects ----------------------------------------
+\newpage
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Sentinel AI - Local Error Monitoring Agent} $|$ \small{Python, Ollama, LLM, CLI}}{2025}
+    \resumeItemListStart
+      \resumeItem{Built an intelligent log monitoring agent that watches log files in real time, analyzes errors
+        using local LLMs via Ollama, and caches results to eliminate redundant API calls. Ships as an
+        installable Python package with a CLI. \href{https://github.com/vaibhavgshete/Sentinal-AI}{\faGithub\ GitHub}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Multi-Model Vision AI Platform} $|$ \small{GitLab CI/CD, Docker, DinD, VLM, SAM, Ollama}}{2025}
+    \resumeItemListStart
+      \resumeItem{Architected an end-to-end GitLab CI/CD pipeline (MR $\rightarrow$ Main $\rightarrow$ Tag) for a
+        12-container multi-model Vision AI platform running VLM, SAM, and Ollama workloads.}
+      \resumeItem{Configured a Docker-in-Docker (DinD) GitLab Runner for automated image builds and versioned
+        pushes to GitLab Container Registry, with SHA-based model change detection to avoid redundant
+        uploads to GitLab Package Registry.}
+      \resumeItem{Enforced MR quality gates with hardcoded path linting, unit test coverage thresholds, and build
+        verification surfaced directly in GitLab MR widgets.}
+      \resumeItem{Built self-contained edge deployment packages with Docker Compose, install.sh, and .env
+        templates to enable one-command deployment in air-gapped drone environments.}
+      \resumeItem{Automated NAS uploads and GitLab Release creation on every tag to provide versioned,
+        downloadable deployment artifacts for field engineers. \textit{Internal Project}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Drone Simulation CI/CD Infrastructure} $|$ \small{Linux, GitLab, Docker, ArduPilot, Python}}{2024 -- 2025}
+    \resumeItemListStart
+      \resumeItem{Built a containerized CI/CD platform supporting 50+ concurrent drone simulation instances using
+        GitLab Runners and Docker; integrated ArduPilot and QGroundControl in a headless environment with
+        automated SFTP log capture. \textit{Internal Project}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Three-Tier Application on AWS EKS} $|$ \small{React, Node.js, MongoDB, Docker, AWS EKS, ALB}}{2023 -- 2024}
+    \resumeItemListStart
+      \resumeItem{Deployed a containerized full-stack application on Amazon EKS with ALB ingress, ECR image
+        delivery, and production-grade Kubernetes orchestration.
+        \href{https://github.com/vaibhavgshete/Three-Tier-Application-On-EKS}{\faGithub\ GitHub}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Java Maven Sonar Docker K8s CI/CD Pipeline} $|$ \small{Java, Jenkins, SonarQube, Docker, Kubernetes}}{2023}
+    \resumeItemListStart
+      \resumeItem{Implemented an end-to-end delivery pipeline for a Spring Boot application combining build
+        automation, SonarQube quality gates, Docker packaging, and Kubernetes deployment.
+        \href{https://github.com/vaibhavgshete/java-maven-sonar-docker-k8s-project}{\faGithub\ GitHub}}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------------------------- Skills ------------------------------------------
+\section{Skills}
+\resumeCompactListStart
+  \resumeItem{\textbf{Languages and Scripting:} Python, Bash/Shell, Java, YAML}
+  \resumeItem{\textbf{CI/CD and Automation:} GitLab CI/CD, Jenkins, GitHub Actions, SonarQube, Nexus}
+  \resumeItem{\textbf{Containers and Orchestration:} Docker, Kubernetes (EKS, self-managed), Helm, Docker Compose}
+  \resumeItem{\textbf{Cloud Platforms:} AWS (EC2, S3, VPC, IAM, EKS, Fargate, ALB, Lambda, ECR)}
+  \resumeItem{\textbf{MLOps and AI Infrastructure:} MLflow, GPU workload management, model serving, edge inference deployment}
+  \resumeItem{\textbf{Infrastructure as Code:} Terraform}
+  \resumeItem{\textbf{Monitoring and Observability:} Prometheus, Grafana}
+  \resumeItem{\textbf{Leadership:} DevOps team leadership, platform roadmap planning, cross-team enablement}
+  \resumeItem{\textbf{Operating Systems and Networking:} Linux (Ubuntu/CentOS), Nginx, DNS, Load Balancing, VPC Networking}
+\resumeSubHeadingListEnd
+
+%----------------------------- Certifications ----------------------------------
+\section{Certifications}
+\resumeCompactListStart
+  \resumeProjectHeading{GitLab Certified Services Engineer Professional}{\textit{May 2024}}
+  \resumeProjectHeading{GitLab Certified CI/CD Associate}{\textit{Aug 2024}}
+  \resumeProjectHeading{GitLab Certified Project Management Associate}{\textit{Apr 2024}}
+  \resumeProjectHeading{GitLab Certified Git Associate}{\textit{Apr 2024}}
+\resumeSubHeadingListEnd
+
+%----------------------------- Education ---------------------------------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Chandigarh University, Mohali, Punjab}{2022 -- 2024}
+    {Master of Computer Applications}{CGPA: 7.50 / 10.00}
+  \resumeSubheading
+    {Dr. Panjabrao Deshmukh Krishi Vidyapeeth (PDKV), Akola}{2017 -- 2021}
+    {Bachelor of Science (Hons)}{CGPA: 7.67 / 10.00}
+\resumeSubHeadingListEnd
+
+\end{document}
